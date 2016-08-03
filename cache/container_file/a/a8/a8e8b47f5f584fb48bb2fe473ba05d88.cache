@@ -1,0 +1,268 @@
+(dp1
+S'session'
+p2
+(dp3
+S'_accessed_time'
+p4
+F1460005759.3069999
+sS'POSTS'
+p5
+(lp6
+(dp7
+S'text'
+p8
+VHey, I'm Watson. I can pick the perfect BMW. Ready?
+p9
+sS'style'
+p10
+S'Watson'
+p11
+sS'icon'
+p12
+S''
+sS'name'
+p13
+g11
+sS'datetime'
+p14
+S'2016-04-06 22:07'
+p15
+sa(dp16
+S'text'
+p17
+Vyes
+p18
+sS'style'
+p19
+S'Partner'
+p20
+sS'datetime'
+p21
+S'2016-04-06 22:07'
+p22
+sS'name'
+p23
+g20
+sS'icon'
+p24
+S''
+sa(dp25
+g17
+VIn order for me to pick out your perfect match, I need to take a look at your social bits and bobs.
+p26
+sg19
+S'Watson'
+p27
+sg21
+S'2016-04-06 22:07'
+p28
+sg23
+g27
+sg24
+S''
+sa(dp29
+S'text'
+p30
+VUh...rather not
+p31
+sS'style'
+p32
+S'Partner'
+p33
+sS'icon'
+p34
+S''
+sS'name'
+p35
+g33
+sS'datetime'
+p36
+S'2016-04-06 22:07'
+p37
+sa(dp38
+g30
+VAs you wish. I'll just ask you a few questions then to get to know you a little better. Ready to begin?
+p39
+sg32
+S'Watson'
+p40
+sg34
+S''
+sg35
+g40
+sg36
+S'2016-04-06 22:07'
+p41
+sa(dp42
+S'text'
+p43
+VI'm rebellious, but in a good way. I just don't think rules apply to me.
+p44
+sS'style'
+p45
+S'Partner'
+p46
+sS'datetime'
+p47
+S'2016-04-06 22:07'
+p48
+sS'name'
+p49
+g46
+sS'icon'
+p50
+S''
+sa(dp51
+g43
+VFirst question. In their unguarded moments, how would your friends describe you?
+p52
+sg45
+S'Watson'
+p53
+sg47
+S'2016-04-06 22:08'
+p54
+sg49
+g53
+sg50
+S''
+sa(dp55
+S'text'
+p56
+VI'm rebellious, but in a good way. I just don't think rules apply to me.
+p57
+sS'style'
+p58
+S'Partner'
+p59
+sS'icon'
+p60
+S''
+sS'name'
+p61
+g59
+sS'datetime'
+p62
+S'2016-04-06 22:08'
+p63
+sa(dp64
+g56
+VNext question. What's your idea of fun?
+p65
+sg58
+S'Watson'
+p66
+sg60
+S''
+sg61
+g66
+sg62
+S'2016-04-06 22:08'
+p67
+sa(dp68
+S'text'
+p69
+VI workout a lot. Lift weights, run, that kind of thing.
+p70
+sS'style'
+p71
+S'Partner'
+p72
+sS'datetime'
+p73
+S'2016-04-06 22:08'
+p74
+sS'name'
+p75
+g72
+sS'icon'
+p76
+S''
+sa(dp77
+g69
+VLast question, Tell me a little bit about the kind of driving you do and your driving style.
+p78
+sg71
+S'Watson'
+p79
+sg73
+S'2016-04-06 22:08'
+p80
+sg75
+g79
+sg76
+S''
+sa(dp81
+S'text'
+p82
+VI just want a car that's fun to drive.
+p83
+sS'style'
+p84
+S'Partner'
+p85
+sS'icon'
+p86
+S''
+sS'name'
+p87
+g85
+sS'datetime'
+p88
+S'2016-04-06 22:08'
+p89
+sa(dp90
+g82
+VYou sound like a person who expects more out of life. To see the BMW model just right for you, walk me through some of your priorities and click the button!<###FORM##><form action='/decide' method='POST'>\u000a<p>Tell me what you're thinking...</p>\u000a<p>\u000a<span style='width: 120px; display:inline-block;'>How much giddy-up?</span><select name='power'><option value='1'>Merge with ease</option><option value='2'>Leave 'em in the dust</option><option value='3'>Shot out of a cannon</option></select><br>\u000a<span style='width: 120px; display:inline-block;'>How many butts in the back seat?</span><select name='passengers'><option value='1'>Empty nester</option><option value='2'>occaisional buddy</option><option value='3'>Tribe of kiddos</option></select><br>\u000a<span style='width: 120px; display:inline-block;'>Willing to spend?</span><select name='budget'><option value='1'>Student's budget</option><option value='2'>Life is good</option><option value='3'>Money's no object</option></select><br>\u000a</p>\u000a<p>What's the BMW that's just right for me<br><input type='submit' name='response-input' value='Show me now!'/></p>\u000a</form>
+p91
+sg84
+S'Watson'
+p92
+sg86
+S''
+sg87
+g92
+sg88
+S'2016-04-06 22:08'
+p93
+sa(dp94
+S'text'
+p95
+S"There's no one quite like you, and I can see you enjoying yourself behind the wheel of an <b>M235i Coupe</b>."
+p96
+sS'style'
+p97
+S'Watson'
+p98
+sS'datetime'
+p99
+S'2016-04-06 22:09'
+p100
+sS'name'
+p101
+g98
+sS'icon'
+p102
+S''
+sasS'DIALOG_CLIENT_ID'
+p103
+I1489560
+sS'STT_TOKEN'
+p104
+V7%2FLMA67Ft1egtdtkVno0U2w0mkJFKuyo1ghWlUZPhcINcHXXYiJUW8QcHVcK0eAoKt9xiqBxlDL8%2FjtvvlOMA8FRn1ntKPx6L3PDNQQAE4kJUadJnrjsinQQsFB%2Fh78IRHfe8d4Tf7S3NRXn5WySzpJG8EaNpmkR1cA1UlEFQbmHgnPU3BpuUYVNOKKyiTLvzeBVn7V6eEZqWyzipZmQJoozcoIT7pcuqqJqASA%2Bm0R5tCgJ9Gh8N%2FexBTkCmL2dphjQ86lnomNUHWYza8sSwwOnIS4glhySgZ5K3cLsQigQp8a3FmNUKWJ7%2Fe6aHFC8cPNxoV2kRcql1%2BlfRaJGY542GS3JF2UHMxhJj36zPaz1JiAeGQPB89U5mjOs1UAj7kh18vGGBqYqancpOYjrNo3V3M1YZ0UYLKqeWo1V6JMTnKx07BD5wyQsmPbuFBU5eooBd4MW1PZGppqy8ta2gsJ%2B9oMl6aCpR7fHcayiX4DjIJEzhUmDR16H00dtcdBDFF3MxfetSFEmhVCNsmlr1JN88qaTcmx6W4gl2qUS6E69Rld3%2Bd7OMkkllF6RlzT%2Fl0KcPZws7TV3nBsnGRb4gCAOrSdh15gLuORi5Vb2yHT7F4fAAb2GHBHOBTDB1tivk4JRaC8lNEPcHt6PMd9pT%2FCHEQ%2BQkEcH3mVVXJeyFoxwuGGE72HuYU6tYbsfdgwKwKLw%2Fn2M%2FvzTIGXjlE8oUoUQF3D7EY8dLQIHio4XmLOO9BrIucY0RuuanuPZvIfxoqjrzV4Xg628eRBB6QtYlsf2WSkCP59GUHvf9RJguXbJWSlR6c1Q8A%2FL1jxvuCbRACTR4vJf4ClEA2BLB7Z81OsXFE1yOE%2BN
+p105
+sS'_creation_time'
+p106
+F1460005644.6670001
+sS'CUSTOMER_PROFILE'
+p107
+V2 Series
+p108
+sS'TTS_TOKEN'
+p109
+VIoMrJTIqFmCMVGr78c8oBl5mDMPRTtjht4P8dMGiIVy%2BhaTerxzDuOkgjdc0%2B1WqhMsNkWZzfiPqn5Tnr5GDiaUfb9pSHLchQhDO%2FaOaSycEPMQci2RhrriHDKYOb4G7QyxYBesKqGuSAUETlpipsP2eRj6wKCKpodaQxEaWM6sSj5gkkSM7cpJjz0PFTRMUoc8ZBjZkN6L%2FhkUgf4%2B1tVK2IUH7bDoG9E0w6W9k%2FahHvbKQsLiGtGd8aviP8S%2Bd3%2FvMTmQ9uGruAdMEu3UCJjlibqIKy0kxdTAOVXkJNHdXlFWmThjpMz%2FDyQOEvRo7DjpBjU9Jq0yV%2FxqtMJ%2B%2FtDqwWlBj51Agc6EP0cgBkEfpUtW5MJC%2BjPCPh3vdusvij5%2FL%2BB5RMfFHnUn%2BtQXeu6VlvSEcJurcKlp%2BrWDBRCsK3oj0uYb69sVJpeI4zo7eCrITklU1ciKh8aDc4ztpo5Id9aL3LF6oXKVonXJOY22iT2VLL8RO2ODAxMAlVOR4AoEayUxpxB9vEX8JlJ0eCVI%2FAp636JdZ4t9HrRfVqfebRxSKcb%2FwEj%2BbmIZna7DAPIho8GxdVkWyrWuSubnqCu0wQuN0JnWwZbChk76J3RYW46fmH3zyF%2FymwI6UWb%2FIUOfXifNIyUqAkvP7Vy6dSzaddCPZu9UtFA1Y7oBUgnyBKB6xFj%2FolVpTpOi20x0zCgbiSrIVdZSJEY6zknDrWFVIseQw2rMO0IlfA0Z8ImNN9f02WxC5EvV9oBWGicK4FLh1t16zZ4tuXpTNx5uPPmrybpKf24ibLRyIKVkBbr%2F%2FBWbgq82j2fDSy9XD4f7qsFIqpxR5vcC1Oxaoc9GPatyUg%2F9uTb9T
+p110
+sS'DIALOG_CONVERSATION_ID'
+p111
+I1500451
+ss.

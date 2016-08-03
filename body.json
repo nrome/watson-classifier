@@ -1,0 +1,633 @@
+{
+	"subject": "BMW Recommendation",
+	"columns": [
+		{
+			"key": "style",
+			"full_name": "style",
+			"type": "categorical",
+			"is_objective": false,
+			"range": [
+				"Coupes/Sedans",
+				"SAVs",
+				"Other"
+			]
+		},
+		{
+			"key": "series",
+			"full_name": "series",
+			"type": "categorical",
+			"is_objective": true,
+			"goal": "max",
+			"range": [
+				"2 Series",
+				"3 Series",
+				"4 Series",
+				"5 Series",
+				"6 Series",
+				"7 Series",
+				"X1",
+				"X3",
+				"X4",
+				"X5",
+				"X6",
+				"Z4",
+				"i3",
+				"i8"
+			],
+			"preference": [
+			]
+		},
+		{
+			"key": "price",
+			"full_name": "price",
+			"type": "numeric",
+			"is_objective": true,
+			"goal": "min"
+		},
+		{
+			"key": "horsepower",
+			"full_name": "horsepower",
+			"type": "numeric",
+			"is_objective": true,
+			"goal": "max"
+		},
+		{
+			"key": "mpg_city",
+			"full_name": "mpg_city",
+			"type": "numeric",
+			"is_objective": false
+		},
+		{
+			"key": "mpg_highway",
+			"full_name": "mpg_highway",
+			"type": "numeric",
+			"is_objective": false
+		},
+		{
+			"key": "engine",
+			"full_name": "engine",
+			"type": "categorical",
+			"is_objective": false,
+			"range": [
+				"2.0L TwinPower Turbo inline 4-Cylinder",
+				"2.0L TwinPower Turbo Diesel 6-Cylinder",
+				"3.0L TwinPower Turbo inline 6-Cylinder",
+				"ActiveHybrid TwinPower Turbo inline 6",
+				"2.0 TwinPower Turbo Diesel 4-Cylinder",
+				"4.4L TwinPower Turbo V8",
+				"4.4L M TwinPower Turbo V8",
+				"4.4L Bi-Turbo V8",
+				"6.0L TwinPower Turbo V12"
+			]
+		},
+		{
+			"key": "image_url",
+			"full_name": "image_url",
+			"type": "text",
+			"is_objective": false
+		}
+	],
+		"options": [
+		{
+			"key": "228i Coupe",
+			"name": "228i Coupe",
+			"values": {
+				"style": "Coupes/Sedans",
+				"series": "2 Series",
+				"price": 32100,
+				"horsepower": 240,
+				"mpg_city": 23,
+				"mpg_highway": 36, 
+				"engine": "2.0L TwinPower Turbo inline 4-Cylinder",
+				"image_url": "/static/images/228i-Coupe.jpg"
+			}
+		},
+		{
+			"key": "228i Conv.",
+			"name": "228i Conv.",
+			"values": {
+				"style": "Coupes/Sedans",
+				"series": "2 Series",
+				"price": 37900,
+				"horsepower": 240,
+				"mpg_city": 23,
+				"mpg_highway": 36, 
+				"engine": "2.0L TwinPower Turbo inline 4-Cylinder",
+				"image_url": "/static/images/228i-Conv.jpg"
+			}
+		},
+		{
+			"key": "M235i Coupe",
+			"name": "M235i Coupe",
+			"values": {
+				"style": "Coupes/Sedans",
+				"series": "2 Series",
+				"price": 43100,
+				"horsepower": 320,
+				"mpg_city": 19,
+				"mpg_highway": 28, 
+				"engine": "3.0L TwinPower Turbo inline 6-Cylinder",
+				"image_url": "/static/images/M235i-Coupe.jpg"
+			}
+		},
+		{
+			"key": "M235i Conv.",
+			"name": "M235i Conv.",
+			"values": {
+				"style": "Coupes/Sedans",
+				"series": "2 Series",
+				"price": 47700,
+				"horsepower": 320,
+				"mpg_city": 19,
+				"mpg_highway": 28, 
+				"engine": "3.0L TwinPower Turbo inline 6-Cylinder",
+				"image_url": "/static/images/M235i-Conv.jpg"
+			}
+		},
+		{
+			"key": "320i Sedan",
+			"name": "320i Sedan",
+			"values": {
+				"style": "Coupes/Sedans",
+				"series": "3 Series",
+				"price": 32950,
+				"horsepower": 180,
+				"mpg_city": 24,
+				"mpg_highway": 36, 
+				"engine": "2.0L TwinPower Turbo inline 4-Cylinder",
+				"image_url": ""
+			}
+		},
+		{
+			"key": "328i Sedan",
+			"name": "328i Sedan",
+			"values": {
+				"style": "Coupes/Sedans",
+				"series": "3 Series",
+				"price": 37500,
+				"horsepower": 240,
+				"mpg_city": 22,
+				"mpg_highway": 34, 
+				"engine": "2.0L TwinPower Turbo inline 4-Cylinder",
+				"image_url": ""
+			}
+		},
+		{
+			"key": "335i Sedan",
+			"name": "335i Sedan",
+			"values": {
+				"style": "Coupes/Sedans",
+				"series": "3 Series",
+				"price": 43750,
+				"horsepower": 300,
+				"mpg_city": 22,
+				"mpg_highway": 32, 
+				"engine": "3.0L TwinPower Turbo inline 6-Cylinder",
+				"image_url": ""
+			}
+		},
+		{
+			"key": "Active Hybrid 3",
+			"name": "Active Hybrid 3",
+			"values": {
+				"style": "Coupes/Sedans",
+				"series": "3 Series",
+				"price": 50150,
+				"horsepower": 335,
+				"mpg_city": 25,
+				"mpg_highway": 33, 
+				"engine": "ActiveHybrid TwinPower Turbo inline 6",
+				"image_url": ""
+			}
+		},
+		{
+			"key": "328i Sport Wagon",
+			"name": "328i Sport Wagon",
+			"values": {
+				"style": "Coupes/Sedans",
+				"series": "3 Series",
+				"price": 41950,
+				"horsepower": 241,
+				"mpg_city": 22,
+				"mpg_highway": 33, 
+				"engine": "2.0L TwinPower Turbo inline 4-Cylinder",
+				"image_url": ""
+			}
+		},
+		{
+			"key": "328d Sport Wagon",
+			"name": "328d Sport Wagon",
+			"values": {
+				"style": "Coupes/Sedans",
+				"series": "3 Series",
+				"price": 43450,
+				"horsepower": 180,
+				"mpg_highway": 43, 
+				"engine": "2.0 TwinPower Turbo Diesel 4-Cylinder",
+				"image_url": ""
+			}
+		},
+		{
+			"key": "M3",
+			"name": "M3",
+			"values": {
+				"style": "Coupes/Sedans",
+				"series": "3 Series",
+				"price": 62000,
+				"horsepower": 425,
+				"mpg_highway": 26, 
+				"engine": "3.0L TwinPower Turbo inline 6-Cylinder",
+				"image_url": ""
+			}
+		},
+		{
+			"key": "428i Coupe",
+			"name": "428i Coupe",
+			"values": {
+				"style": "Coupes/Sedans",
+				"series": "4 Series",
+				"price": 40750,
+				"horsepower": 240,
+				"mpg_city": 22,
+				"mpg_highway": 35, 
+				"engine": "2.0L TwinPower Turbo inline 4-Cylinder",
+				"image_url": ""
+			}
+		},
+		{
+			"key": "435i Coupe",
+			"name": "435i Coupe",
+			"values": {
+				"style": "Coupes/Sedans",
+				"series": "4 Series",
+				"price": 46250,
+				"horsepower": 300,
+				"mpg_city": 22,
+				"mpg_highway": 32, 
+				"engine": "3.0L TwinPower Turbo inline 6-Cylinder",
+				"image_url": ""
+			}
+		},
+		{
+			"key": "428i Conv.",
+			"name": "428i Conv.",
+			"values": {
+				"style": "Coupes/Sedans",
+				"series": "4 Series",
+				"price": 48750,
+				"horsepower": 240,
+				"mpg_highway": 34, 
+				"engine": "2.0L TwinPower Turbo inline 4-Cylinder",
+				"image_url": ""
+			}
+		},
+		{
+			"key": "435i Conv.",
+			"name": "435i Conv.",
+			"values": {
+				"style": "Coupes/Sedans",
+				"series": "4 Series",
+				"price": 54900,
+				"horsepower": 300,
+				"mpg_highway": 30, 
+				"engine": "3.0L TwinPower Turbo inline 6-Cylinder",
+				"image_url": ""
+			}
+		},
+		{
+			"key": "428i Gran Coupe",
+			"name": "428i Gran Coupe",
+			"values": {
+				"style": "Coupes/Sedans",
+				"series": "4 Series",
+				"price": 40300,
+				"horsepower": 240,
+				"mpg_city": 23,
+				"mpg_highway": 34, 
+				"engine": "2.0L TwinPower Turbo inline 4-Cylinder",
+				"image_url": ""
+			}
+		},
+		{
+			"key": "435i Gran Coupe",
+			"name": "435i Gran Coupe",
+			"values": {
+				"style": "Coupes/Sedans",
+				"series": "4 Series",
+				"price": 45800,
+				"horsepower": 300,
+				"mpg_city": 21,
+				"mpg_highway": 32, 
+				"engine": "3.0L TwinPower Turbo inline 6-Cylinder",
+				"image_url": ""
+			}
+		},
+		{
+			"key": "M4",
+			"name": "M4",
+			"values": {
+				"style": "Coupes/Sedans",
+				"series": "4 Series",
+				"price": 64200,
+				"horsepower": 425,
+				"mpg_city": 17,
+				"mpg_highway": 26, 
+				"engine": "3.0L TwinPower Turbo inline 6-Cylinder",
+				"image_url": ""
+			}
+		},
+		{
+			"key": "M4 Conv.",
+			"name": "M4 Conv.",
+			"values": {
+				"style": "Coupes/Sedans",
+				"series": "4 Series",
+				"price": 72500,
+				"horsepower": 425,
+				"mpg_city": 17,
+				"mpg_highway": 26, 
+				"engine": "3.0L TwinPower Turbo inline 6-Cylinder",
+				"image_url": ""
+			}
+		},
+		{
+			"key": "528i Sedan",
+			"name": "528i Sedan",
+			"values": {
+				"style": "Coupes/Sedans",
+				"series": "5 Series",
+				"price": 49950,
+				"horsepower": 240,
+				"mpg_city": 23,
+				"mpg_highway": 34, 
+				"engine": "2.0L TwinPower Turbo inline 4-Cylinder",
+				"image_url": ""
+			}
+		},
+		{
+			"key": "535i Sedan",
+			"name": "535i Sedan",
+			"values": {
+				"style": "Coupes/Sedans",
+				"series": "5 Series",
+				"price": 55600,
+				"horsepower": 300,
+				"mpg_city": 20,
+				"mpg_highway": 30, 
+				"engine": "3.0L TwinPower Turbo inline 6-Cylinder",
+				"image_url": ""
+			}
+		},
+		{
+			"key": "535d Sedan",
+			"name": "535d Sedan",
+			"values": {
+				"style": "Coupes/Sedans",
+				"series": "5 Series",
+				"price": 57100,
+				"horsepower": 255,
+				"mpg_highway": 38, 
+				"engine": "3.0L TwinPower Turbo inline 6-Cylinder",
+				"image_url": ""
+			}
+		},
+		{
+			"key": "550i Sedan",
+			"name": "550i Sedan",
+			"values": {
+				"style": "Coupes/Sedans",
+				"series": "5 Series",
+				"price": 64900,
+				"horsepower": 445,
+				"mpg_city": 17,
+				"mpg_highway": 25, 
+				"engine": "4.4L TwinPower Turbo V8",
+				"image_url": ""
+			}
+		},
+		{
+			"key": "ActiveHybrid 5",
+			"name": "ActiveHybrid 5",
+			"values": {
+				"style": "Coupes/Sedans",
+				"series": "5 Series",
+				"price": 61900,
+				"horsepower": 335,
+				"mpg_city": 23,
+				"mpg_highway": 30, 
+				"engine": "ActiveHybrid TwinPower Turbo inline 6",
+				"image_url": ""
+			}
+		},
+		{
+			"key": "535i GT",
+			"name": "535i GT",
+			"values": {
+				"style": "Coupes/Sedans",
+				"series": "5 Series",
+				"price": 60700,
+				"horsepower": 300,
+				"mpg_city": 19,
+				"mpg_highway": 28, 
+				"engine": "3.0L TwinPower Turbo inline 6-Cylinder",
+				"image_url": ""
+			}
+		},
+		{
+			"key": "550i GT",
+			"name": "550i GT",
+			"values": {
+				"style": "Coupes/Sedans",
+				"series": "5 Series",
+				"price": 69100,
+				"horsepower": 445,
+				"mpg_city": 16,
+				"mpg_highway": 25, 
+				"engine": "4.4L TwinPower Turbo V8",
+				"image_url": ""
+			}
+		},
+		{
+			"key": "M5",
+			"name": "M5",
+			"values": {
+				"style": "Coupes/Sedans",
+				"series": "5 Series",
+				"price": 93600,
+				"horsepower": 560,
+				"mpg_city": 16,
+				"mpg_highway": 25, 
+				"engine": "4.4L M TwinPower Turbo V8",
+				"image_url": ""
+			}
+		},
+		{
+			"key": "640i Coupe",
+			"name": "640i Coupe",
+			"values": {
+				"style": "Coupes/Sedans",
+				"series": "6 Series",
+				"price": 76100,
+				"horsepower": 315,
+				"mpg_city": 22,
+				"mpg_highway": 32, 
+				"engine": "3.0L TwinPower Turbo inline 6-Cylinder",
+				"image_url": "/static/images/640i-Coupe.jpg"
+			}
+		},
+		{
+			"key": "640i Conv.",
+			"name": "640i Conv.",
+			"values": {
+				"style": "Coupes/Sedans",
+				"series": "6 Series",
+				"price": 83600,
+				"horsepower": 315,
+				"mpg_city": 20,
+				"mpg_highway": 31, 
+				"engine": "3.0L TwinPower Turbo inline 6-Cylinder",
+				"image_url": "/static/images/640i-Conv.jpg"
+			}
+		},
+		{
+			"key": "640i Gran Coupe",
+			"name": "640i Gran Coupe",
+			"values": {
+				"style": "Coupes/Sedans",
+				"series": "6 Series",
+				"price": 78300,
+				"horsepower": 315,
+				"mpg_city": 20,
+				"mpg_highway": 31, 
+				"engine": "3.0L TwinPower Turbo inline 6-Cylinder",
+				"image_url": "/static/images/640i-Gran-Coupe.jpg"
+			}
+		},
+		{
+			"key": "650i Coupe",
+			"name": "650i Coupe",
+			"values": {
+				"style": "Coupes/Sedans",
+				"series": "6 Series",
+				"price": 87400,
+				"horsepower": 445,
+				"mpg_city": 17,
+				"mpg_highway": 25, 
+				"engine": "4.4L TwinPower Turbo V8",
+				"image_url": "/static/images/650i-Coupe.jpg"
+			}
+		},
+		{
+			"key": "650i Conv.",
+			"name": "650i Conv.",
+			"values": {
+				"style": "Coupes/Sedans",
+				"series": "6 Series",
+				"price": 94400,
+				"horsepower": 445,
+				"mpg_city": 17,
+				"mpg_highway": 25, 
+				"engine": "4.4L TwinPower Turbo V8",
+				"image_url": "/static/images/650i-Conv.jpg"
+			}
+		},
+		{
+			"key": "650i Gran Coupe",
+			"name": "650i Gran Coupe",
+			"values": {
+				"style": "Coupes/Sedans",
+				"series": "6 Series",
+				"price": 89600,
+				"horsepower": 445,
+				"mpg_city": 17,
+				"mpg_highway": 25, 
+				"engine": "4.4L TwinPower Turbo V8",
+				"image_url": "/static/images/650i-Gran-Coupe.jpg"
+			}
+		},
+		{
+			"key": "M6 Coupe",
+			"name": "M6 Coupe",
+			"values": {
+				"style": "Coupes/Sedans",
+				"series": "6 Series",
+				"price": 111900,
+				"horsepower": 560,
+				"mpg_city": 15,
+				"mpg_highway": 22, 
+				"engine": "4.4L M TwinPower Turbo V8",
+				"image_url": "/static/images/M6-Coupe.jpg"
+			}
+		},
+		{
+			"key": "M6 Gran Coupe",
+			"name": "M6 Gran Coupe",
+			"values": {
+				"style": "Coupes/Sedans",
+				"series": "6 Series",
+				"price": 115700,
+				"horsepower": 560,
+				"mpg_city": 14,
+				"mpg_highway": 20, 
+				"engine": "4.4L M TwinPower Turbo V8",
+				"image_url": "/static/images/M6-Gran-Coupe.jpg"
+			}
+		},
+		{
+			"key": "M6 Convertible",
+			"name": "M6 Convertible",
+			"values": {
+				"style": "Coupes/Sedans",
+				"series": "6 Series",
+				"price": 118200,
+				"horsepower": 560,
+				"mpg_city": 15,
+				"mpg_highway": 22, 
+				"engine": "4.4L M TwinPower Turbo V8",
+				"image_url": "/static/images/M6-Conv.jpg"
+			}
+		},
+		{
+			"key": "X3 28i",
+			"name": "X3 28i",
+			"values": {
+				"style": "Other",
+				"series": "X3",
+				"price": 38500,
+				"horsepower": 240,
+				"mpg_city": 21,
+				"mpg_highway": 28, 
+				"engine": "2.0L TwinPower Turbo inline 4-Cylinder",
+				"image_url": "/static/images/X3-28i.jpg"
+			}
+		},
+		{
+			"key": "X3 28d",
+			"name": "X3 28d",
+			"values": {
+				"style": "Other",
+				"series": "X3",
+				"price": 42000,
+				"horsepower": 180,
+				"mpg_city": 27,
+				"mpg_highway": 34, 
+				"engine": "2.0L TwinPower Turbo Diesel 6-Cylinder",
+				"image_url": "/static/images/X3-28d.jpg"
+			}
+		},
+		{
+			"key": "X3 35i",
+			"name": "X3 35i",
+			"values": {
+				"style": "Other",
+				"series": "X3",
+				"price": 45500,
+				"horsepower": 300,
+				"mpg_city": 19,
+				"mpg_highway": 26, 
+				"engine": "3.0L TwinPower Turbo inline 6-Cylinder",
+				"image_url": "/static/images/X3-35i.jpg"
+			}
+		}
+	]
+}

@@ -1,0 +1,277 @@
+(dp1
+S'session'
+p2
+(dp3
+S'DIALOG_CONVERSATION_ID'
+p4
+I1496988
+sS'POSTS'
+p5
+(lp6
+(dp7
+S'text'
+p8
+VHey, I'm Watson. I can pick the perfect BMW. Ready?
+p9
+sS'style'
+p10
+S'Watson'
+p11
+sS'icon'
+p12
+S''
+sS'name'
+p13
+g11
+sS'datetime'
+p14
+S'2016-04-06 17:49'
+p15
+sa(dp16
+S'text'
+p17
+Vyes 
+p18
+sS'style'
+p19
+S'Partner'
+p20
+sS'datetime'
+p21
+S'2016-04-06 17:49'
+p22
+sS'name'
+p23
+g20
+sS'icon'
+p24
+S''
+sa(dp25
+g17
+VIn order for me to pick out your perfect match, I need to take a look at your social bits and bobs.
+p26
+sg19
+S'Watson'
+p27
+sg21
+S'2016-04-06 17:49'
+p28
+sg23
+g27
+sg24
+S''
+sa(dp29
+S'text'
+p30
+VI would rather not 
+p31
+sS'style'
+p32
+S'Partner'
+p33
+sS'icon'
+p34
+S''
+sS'name'
+p35
+g33
+sS'datetime'
+p36
+S'2016-04-06 17:49'
+p37
+sa(dp38
+g30
+VAs you wish. I'll just ask you a few questions then to get to know you a little better. Ready to begin?
+p39
+sg32
+S'Watson'
+p40
+sg34
+S''
+sg35
+g40
+sg36
+S'2016-04-06 17:49'
+p41
+sa(dp42
+S'text'
+p43
+Vsure 
+p44
+sS'style'
+p45
+S'Partner'
+p46
+sS'datetime'
+p47
+S'2016-04-06 17:50'
+p48
+sS'name'
+p49
+g46
+sS'icon'
+p50
+S''
+sa(dp51
+g43
+VFirst question. In their unguarded moments, how would your friends describe you?
+p52
+sg45
+S'Watson'
+p53
+sg47
+S'2016-04-06 17:50'
+p54
+sg49
+g53
+sg50
+S''
+sa(dp55
+S'text'
+p56
+VI don't know yes rules don't apply to me 
+p57
+sS'style'
+p58
+S'Partner'
+p59
+sS'icon'
+p60
+S''
+sS'name'
+p61
+g59
+sS'datetime'
+p62
+S'2016-04-06 17:50'
+p63
+sa(dp64
+g56
+VNext question. What's your idea of fun?
+p65
+sg58
+S'Watson'
+p66
+sg60
+S''
+sg61
+g66
+sg62
+S'2016-04-06 17:50'
+p67
+sa(dp68
+S'text'
+p69
+VI like to work out good you have quite a bit 
+p70
+sS'style'
+p71
+S'Partner'
+p72
+sS'datetime'
+p73
+S'2016-04-06 17:50'
+p74
+sS'name'
+p75
+g72
+sS'icon'
+p76
+S''
+sa(dp77
+g69
+VLast question, Tell me a little bit about the kind of driving you do and your driving style.
+p78
+sg71
+S'Watson'
+p79
+sg73
+S'2016-04-06 17:50'
+p80
+sg75
+g79
+sg76
+S''
+sa(dp81
+S'text'
+p82
+VI just want a car that's fun to drive 
+p83
+sS'style'
+p84
+S'Partner'
+p85
+sS'icon'
+p86
+S''
+sS'name'
+p87
+g85
+sS'datetime'
+p88
+S'2016-04-06 17:50'
+p89
+sa(dp90
+g82
+VYou sound like a person who expects more out of life.  <Going to recommend a 2 Series model...>
+p91
+sg84
+S'Watson'
+p92
+sg86
+S''
+sg87
+g92
+sg88
+S'2016-04-06 17:51'
+p93
+sa(dp94
+S'text'
+p95
+V
+sS'style'
+p96
+S'Partner'
+p97
+sS'datetime'
+p98
+S'2016-04-06 17:51'
+p99
+sS'name'
+p100
+g97
+sS'icon'
+p101
+S''
+sa(dp102
+g95
+S"C'mon, you have to say something!"
+p103
+sg96
+S'Watson'
+p104
+sg98
+S'2016-04-06 17:51'
+p105
+sg100
+g104
+sg101
+S''
+sasS'DIALOG_CLIENT_ID'
+p106
+I1486156
+sS'STT_TOKEN'
+p107
+Veb7cSEomPFQSsBj%2F2l%2BdHprW77vUUBuNN%2BOWq3AtKIfHaMXgzt8tUP0kHui8%2BIUCjDOY%2B8HyPnd1HUbtoH%2FF3SR9nyH8Xs7CCPZ416l63np%2BRIsl7aTxmxZKe4CBvbJVXcKHCbUb6FnKkO%2BcvTfAIGQDFyTbEHGqxS08uVNgU%2BNDPxXgTV5B7rw83JzxnA5yieZfcYtLZj70Az4y7Pj4JvybWQrYE6NeOoGzcpyTiebNANJ8w9Xp3KwjltHa3S%2FKBA8l0ljqNOkHzSGXJtbm4yOUeuA2OlIk6WUTk41JqZmhF6fe3zT3LXYMNyl0TwDgT35S216sbAqBH%2BiHpGS96hL7DVQGazFwXAk%2FNOSK2Eo%2FERDDHYFllmNvV2DnRkszAFM4UsvmT04Rtqvek5crkyEsBJei4osZJ1OOeJbLZpfGeYhigGdkEDQdj9zNw1JfmMKkdjVxI4bD1ArUue4baccClsLeaKNuvbwB63SREg6X1aF1h0ecfZQdx5ji%2BhoyCu73vYrFFkjNXl7AsAthCluXVFsTUZWUHAxRSFBGkfHCqoXI4uxp1KgdcVdX11paGtZg3WoA6xhQyWgpo%2BI%2Fw4phDZEy8ZuWTUPXTozN%2FKEP2y8ebH5Fu7tQNOAfAA4WNUa6DVvVDM%2BYxHuxkMTKy1IRE47N9jpgJPYVTONIk75urumozwCpBfatJPFwEHvEooOITlv9Q1CQCPWgHkPpMXIFvS8e%2FJED21p3oSUXFt6TCeB%2FCLpNOMI9DL2uGiI8cM6unak9DFeB%2FuLy3i2sYy3l%2Fksb%2F2V3lX0jGMC3NdJYaVBjmMH8YdnmMiITkOknj0iJK%2FNyn5wC40QycYsPG8cgEX2k81jS
+p108
+sS'TTS_TOKEN'
+p109
+VB6qY0ZOp9GhlliSAaB5gHCb27tnRnW9whmFI4AWXqgAxhpgymmDPCPS6h5jB0zF2dy%2BEtHylrCsHtRvkmHK3uX%2BQNZG5Ss7YOBp29OsbbTd2d5iHMJnED3hNb%2BTroTahD6Zr0BMKTLPoZ14lwqoG4jAkfyjXTVjE1NwZrKO2rRFNbfr8E2blz%2BfQYYHO4OaOkZGqoz%2BWcFbitDVWJZOoFq7z1eKdQ6Fxvyw4D8Sf0pghaxG1kw0gmzpcJf0Vc%2BYw7591EJ%2FV1qWrteN1ZijgPg4aGTn9AhG%2BtustTMW350%2FbfWrcQk8K034vGXUrs%2FOPMJUikACOcIeoiY9P1nqCkncTl5XW2J51B6w4A%2Fz%2BeMAvUAq6Lp97CN5U%2B3awi24vaWvNIO9ExGRh9lzqYqnqYe0dJnCWt1QzUZ85c8ZnopNkg3UpeqHLkVZfhmcQiqdUNV%2Fz1exjo7%2BUkPwAI33RfIqNFjtg5q7GfI5PRLJq4C1Jvt433EAKvn9KH5%2BycSvLvgvy24fn77kZjsygXChcEm2wK9g3lCwo6hJk6VriE4wCFd6rghWI90DZMdPALDxLF5j6Ypk2bQ2R6LHcl4LfyhbBzHCOSKQBAlfX3VTlRl%2BQ5e9bDWCtldvDYGAORnBw5CrJ9oJep9%2BImoEAmHdhOZm4lfWaNcpgbRHrnFHWTRm1HAGsbS5dCFSxLLqO5RNHw0PNK9Nu%2BxK2hqLKDOKJFlAm%2FngJ8UcsSPIWqlMr5tmyrfR%2BdZEncXEcE2LnfRvgfj4gV9mMBZqIpX8S2JrzDH79ImVxOTfxA66Ypdn3HrPidg0Wub66p%2Bibh2S7I0rz1d3w8u7ClqAz1mGlAA5JO0K22d%2Bmk1%2Fm
+p110
+sS'_accessed_time'
+p111
+F1459990267.1389999
+sS'_creation_time'
+p112
+F1459990153.5369999
+ss.

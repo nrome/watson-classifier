@@ -1,0 +1,255 @@
+(dp1
+S'session'
+p2
+(dp3
+S'RANDR_CURSOR'
+p4
+I0
+sS'DIALOG_CONVERSATION_ID'
+p5
+I1080662
+sS'POSTS'
+p6
+(lp7
+(dp8
+S'text'
+p9
+VThank you for contacting the call center. I can provide information about our company and products, help you with your account, and make it easier to do business with us. How may I assist you?
+p10
+sS'style'
+p11
+S'Watson'
+p12
+sS'icon'
+p13
+S''
+sS'name'
+p14
+g12
+sS'datetime'
+p15
+S'2016-03-14 14:24'
+p16
+sa(dp17
+S'text'
+p18
+Vwhere can I see the football game?
+p19
+sS'style'
+p20
+S'Partner'
+p21
+sS'datetime'
+p22
+S'2016-03-14 14:24'
+p23
+sS'name'
+p24
+g21
+sS'icon'
+p25
+S''
+sa(dp26
+g18
+VDonald W. Reynolds Razorback Stadium is an American football stadium in Fayetteville, Arkansas and serves as the home field of the University of Arkansas Razorbacks football team since its opening in 1938. You can catch all the action at 350 N Razorback Rd, Fayetteville, AR 72701.
+p27
+sg20
+S'Watson'
+p28
+sg22
+S'2016-03-14 14:24'
+p29
+sg24
+g28
+sg25
+S''
+sa(dp30
+S'text'
+p31
+Vwho is walmart and what can you tell me about your business operations
+p32
+sS'style'
+p33
+S'Partner'
+p34
+sS'icon'
+p35
+S''
+sS'name'
+p36
+g34
+sS'datetime'
+p37
+S'2016-03-14 14:24'
+p38
+sa(dp39
+g31
+VAs the largest retailer in the world, Walmart meets the needs of more than 260 million customers every week. And we do it wherever they shop--in our stores, online, or through their mobile devices.
+p40
+sg33
+S'Watson'
+p41
+sg35
+S''
+sg36
+g41
+sg37
+S'2016-03-14 14:25'
+p42
+sa(dp43
+S'text'
+p44
+Vthe xerox printer is printing on two sides
+p45
+sS'style'
+p46
+S'Partner'
+p47
+sS'datetime'
+p48
+S'2016-03-14 14:25'
+p49
+sS'name'
+p50
+g47
+sS'icon'
+p51
+S''
+sa(dp52
+g44
+VI've retrieved <b>10 routers</b> that may be of interest. You're viewing router number <b>#1</b><p><b>Xerox 3550 printing two sided </b><br><u>Text:</u>  Click on Start Click on Devices and Printers Right click on the printer icon and go to Printer Preferences Change to NONE (Figure 1 below) Click Apply Click OK If this is not the HOST PC for the printer log on to the Host PC and do the same thing on it. Figure 1. <br><u>Document id:</u> KB0011556</p><form action="/page" method="POST"><input type="submit" name="cursor-input" value="Next"/> <input type="submit" name="cursor-input" value="Prev"/> <input type="submit" type="submit" name="cursor-input" value="Accept"/> <input type="hidden" name="search-type" value="RANDR"></form>
+p53
+sg46
+S'Watson'
+p54
+sg48
+S'2016-03-14 14:25'
+p55
+sg50
+g54
+sg51
+S''
+sasS'DIALOG_CLIENT_ID'
+p56
+I1094586
+sS'STT_TOKEN'
+p57
+VlHdHsyR%2BmviM99Ejm20EjU4%2Fyhwtx61SRVpcmHbrWS%2BOyhUKlREIzD0eWs4xtA49ZFsp5Mx2UGV3VPz%2Fq5U1zrFMVvDLecCYKPifoJOmqBhmwpnKAmbYqOwAjFRrG%2Bul1buux2mjgpn%2BeyFy8gHQIWKID8796ZjmLp9hBwx8%2BBDaCGv86p7kgg96MA1Gq5u4DOaEQuERXa8Q8AUGzG%2FDy40GS9cEQZxiYQrQIqUaFeDOXBSkR74FtjVYXgOkZbXfIRaksMFfuDWn6AEAMugK7biWWeDn4eeARCG0YztQfVdUH4UeuvYt4WX3vrbzOfkc7oRN7Yxu0CRNcdNJbhpNSVakre1e0bRoGSlJ30g8RIg9uSEy46F%2BjSUtzmC3P87dWjbgHQ%2F%2FqJiULp%2FkW1U3RZWIXzAwgukQpwJ0qVunXJXNEsPJ8H61zYKeYBke6Y%2FXw1Yse9Khif6wWBdS4bG82RMTUVGDtY%2Fs%2BxrqVUzA8DptPnq4bnxEg%2FNUT4iQmy5Ao%2B2xgbVcmGy5P7Akmdoi0Gd81zL21DULN2oARKIbdk7bDTZKa5UTcbwq6R4jDOoMpRxLqV9OmFWs%2BayP3NAhcbwo%2BFdpo7YxucvKdRn77BFaIaCw8NalwiJ37OS%2FH2dxvbwk9klsQ8FZzsMW4VX5XSILPcpZjdowxzfGMcBqESwvtVaPm272eO3uj%2BBsCFUF6MImj%2F8O%2Bbt6L%2BwQlgB%2BtuRi%2BdrJesTeAVCNcUSOrioIxlaS%2B7hU8anMNgABsNrR4sjcOyufE6xlXlqI%2FUM8dBCSRsdj4aeTox1KmWXsKIsssagyQ3T5c25zEILwFD1KhkSA1D%2BFPIk1b8k7Zb5SGDyzvVKAE8nN
+p58
+sS'RANDR_SEARCH_RESULTS'
+p59
+(lp60
+(dp61
+S'Text'
+p62
+V Click on Start Click on Devices and Printers Right click on the printer icon and go to Printer Preferences Change to NONE (Figure 1 below) Click Apply Click OK If this is not the HOST PC for the printer log on to the Host PC and do the same thing on it. Figure 1. 
+p63
+sS'ShortDescription'
+p64
+VXerox 3550 printing two sided 
+p65
+sS'id'
+p66
+VKB0011556
+p67
+sa(dp68
+g62
+VXerox 4260 is printing DR's on both sides of the paper: 1. Go to START, Devices & Printers. 2. Right click on the printer and go to Printing Preferences and change it from 2 Sided to 1 Sided. Click OK 3. Next, Right click on the printer and go to Printer Properties. 4. Click on Change Properties at the bottom of the screen. 5. When it refreshes, click on the ADVANCED tab. 6. Click on Printing Defaults at the bottom. 7. Change the setting there from 2 Sided to 1 Sided, click OK. Close ABF Explorer Must be changed in BOTH Places to work.
+p69
+sg64
+VXerox 4260 is printing DR's on both sides of the paper / Prints Double sided
+p70
+sg66
+VKB0011429
+p71
+sa(dp72
+g62
+VInstructions: Have the user Start AIMS (Figure 1.) http://my.abf.corp/abfsls/aims/aims.asp Enter the account and location needing printed DRs Proceed to the OPER department Location Detail page Click the Delivery Receipt Options hyperlink Select Print from the DR Print Method drop down Click the Update button The DR Delivery Method is the main way we update the accounts (Figure 1). The drop- down values are: Blank Spaces ; This means print until you make the switch to paperless. Once you change the lockout a space means to suppress Suppress ; True DRs will never print Print ; True DRs will always print Live Unload Only ; This means that only shipments that are live unload (not marked spot in CIT MAN) will print. I will show an example below where this is useful. For most accounts it is as simple as setting them to Print so that a DR will print once they close a city manifest, but for SPOT accounts we have a couple of options. For these options to work: ** TRAP CUSTOMER FLAG MUST BE SET TO SPOT ** Print Two Copies of Actual DRs for Spots Just flag the location to print and we will automatically print two copies if the pro is marked as spotted in CIT MAN Print Two Copies of a Manifest Style DR Make sure you have setup a manifest for that account location and FLAGGED THE DELIVERY RECEIPT CHECKBOX. Then set the DR Delivery Method to Suppress and check the Spot Manifest? checkbox. Print One Copy of a Manifest and One Copy of True DRs Set the DR Delivery Method to Print and check the Spot Manifest checkbox. Print Manifests when Spotting and DRs when Live Unloading We have some customers where we generally spot at, but sometimes we live unload and they require DRs when we live unload. In that case, we set them up to print two copies of a manifest for spotted shipments and one copy of a DR when live unloading. Contact for these screens is Judy Stanfill x6978 Figure 1
+p73
+sg64
+VAIMS - Flag Account in AIMS to print DRs
+p74
+sg66
+VKB0010057
+p75
+sa(dp76
+g62
+VInstructions: Windows 7: Click START Type one of these servers: \u005c\u005cdvprint1 - for all shared printers in the GO Right click the printer that needs connected Left click on CONNECT Make default printer if desired Notes: Printers are named for the area they are located in and the model of printer, for example: 1wcopyh4 - HP printer in west copy room on the first floor 1ebened2330 - Dell 2330 printer in east benefits area on the first floor 4whrx5845 - Xerox printer in HR area on the fourth floor
+p77
+sg64
+VConnect to GO Printers 
+p78
+sg66
+VKB0010824
+p79
+sa(dp80
+g62
+VPrinter is shows landscape or portrait preview just fine but prints everything inverted. Instructions: Click on START and go to Devices and Printers, Right click on the printer and go to Printing Preferences and check One Page Per Side. You may have to do this on the HOST PC as well.
+p81
+sg64
+VPrinter printing inverted
+p82
+sg66
+VKB0011527
+p83
+sa(dp84
+g62
+VTools How To: Change Laser Printer from ThinPrint to Hold status OR Switch to another Laser Printer Instructions: Step One: <xml> <w:WordDocument> <w:View>Normal</w:View> <w:Zoom>0</w:Zoom> <w:TrackMoves/> <w:TrackFormatting/> <w:PunctuationKerning/> <w:ValidateAgainstSchemas/> <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid> <w:IgnoreMixedContent>false</w:IgnoreMixedContent> <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText> <w:DoNotPromoteQF/> <w:LidThemeOther>EN-US</w:LidThemeOther> <w:LidThemeAsian>X-NONE</w:LidThemeAsian> <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript> <w:Compatibility> <w:BreakWrappedTables/> <w:SnapToGridInCell/> <w:WrapTextWithPunct/> <w:UseAsianBreakRules/> <w:DontGrowAutofit/> <w:SplitPgBreakAndParaMark/> <w:DontVertAlignCellWithSp/> <w:DontBreakConstrainedForcedTables/> <w:DontVertAlignInTxbx/> <w:Word11KerningPairs/> <w:CachedColBalance/> </w:Compatibility> <m:mathPr> <m:mathFont m:val='Cambria Math'/> <m:brkBin m:val='before'/> <m:brkBinSub m:val='&#45;-'/> <m:smallFrac m:val='off'/> <m:dispDef/> <m:lMargin m:val='0'/> <m:rMargin m:val='0'/> <m:defJc m:val='centerGroup'/> <m:wrapIndent m:val='1440'/> <m:intLim m:val='subSup'/> <m:naryLim m:val='undOvr'/> </m:mathPr></w:WordDocument> </xml><!{endif}--> Go to FIL STA DEP in FMSG Leave the PSL line alone Change PSLX to HOLD ; (this is how Erica does it). <xml> <w:LatentStyles DefLockedState='false' DefUnhideWhenUsed='true' DefSemiHidden='true' DefQFormat='false' DefPriority='99' LatentStyleCount='267'> <w:LsdException Locked='false' Priority='0' SemiHidden='false' UnhideWhenUsed='false' QFormat='true' Name='Normal'/> <w:LsdException Locked='false' Priority='9' SemiHidden='false' UnhideWhenUsed='false' QFormat='true' Name='heading 1'/> <w:LsdException Locked='false' Priority='9' QFormat='true' Name='heading 2'/> <w:LsdException Locked='false' Priority='9' QFormat='true' Name='heading 3'/> <w:LsdException Locked='false' Priority='9' QFormat='true' Name='heading 4'/> <w:LsdException Locked='false' Priority='9' QFormat='true' Name='heading 5'/> <w:LsdException Locked='false' Priority='9' QFormat='true' Name='heading 6'/> <w:LsdException Locked='false' Priority='9' QFormat='true' Name='heading 7'/> <w:LsdException Locked='false' Priority='9' QFormat='true' Name='heading 8'/> <w:LsdException Locked='false' Priority='9' QFormat='true' Name='heading 9'/> <w:LsdException Locked='false' Priority='39' Name='toc 1'/> <w:LsdException Locked='false' Priority='39' Name='toc 2'/> <w:LsdException Locked='false' Priority='39' Name='toc 3'/> <w:LsdException Locked='false' Priority='39' Name='toc 4'/> <w:LsdException Locked='false' Priority='39' Name='toc 5'/> <w:LsdException Locked='false' Priority='39' Name='toc 6'/> <w:LsdException Locked='false' Priority='39' Name='toc 7'/> <w:LsdException Locked='false' Priority='39' Name='toc 8'/> <w:LsdException Locked='false' Priority='39' Name='toc 9'/> <w:LsdException Locked='false' Priority='35' QFormat='true' Name='caption'/> <w:LsdException Locked='false' Priority='10' SemiHidden='false' UnhideWhenUsed='false' QFormat='true' Name='Title'/> <w:LsdException Locked='false' Priority='1' Name='Default Paragraph Font'/> <w:LsdException Locked='false' Priority='11' SemiHidden='false' UnhideWhenUsed='false' QFormat='true' Name='Subtitle'/> <w:LsdException Locked='false' Priority='22' SemiHidden='false' UnhideWhenUsed='false' QFormat='true' Name='Strong'/> <w:LsdException Locked='false' Priority='20' SemiHidden='false' UnhideWhenUsed='false' QFormat='true' Name='Emphasis'/> <w:LsdException Locked='false' Priority='59' SemiHidden='false' UnhideWhenUsed='false' Name='Table Grid'/> <w:LsdException Locked='false' UnhideWhenUsed='false' Name='Placeholder Text'/> <w:LsdException Locked='false' Priority='1' SemiHidden='false' UnhideWhenUsed='false' QFormat='true' Name='No Spacing'/> <w:LsdException Locked='false' Priority='60' SemiHidden='false' UnhideWhenUsed='false' Name='Light Shading'/> <w:LsdException Locked='false' Priority='61' SemiHidden='false' UnhideWhenUsed='false' Name='Light List'/> <w:LsdException Locked='false' Priority='62' SemiHidden='false' UnhideWhenUsed='false' Name='Light Grid'/> <w:LsdException Locked='false' Priority='63' SemiHidden='false' UnhideWhenUsed='false' Name='Medium Shading 1'/> <w:LsdException Locked='false' Priority='64' SemiHidden='false' UnhideWhenUsed='false' Name='Medium Shading 2'/> <w:LsdException Locked='false' Priority='65' SemiHidden='false' UnhideWhenUsed='false' Name='Medium List 1'/> <w:LsdException Locked='false' Priority='66' SemiHidden='false' UnhideWhenUsed='false' Name='Medium List 2'/> <w:LsdException Locked='false' Priority='67' SemiHidden='false' UnhideWhenUsed='false' Name='Medium Grid 1'/> <w:LsdException Locked='false' Priority='68' SemiHidden='false' UnhideWhenUsed='false' Name='Medium Grid 2'/> <w:LsdException Locked='false' Priority='69' SemiHidden='false' UnhideWhenUsed='false' Name='Medium Grid 3'/> <w:LsdException Locked='false' Priority='70' SemiHidden='false' UnhideWhenUsed='false' Name='Dark List'/> <w:LsdException Locked='false' Priority='71' SemiHidden='false' UnhideWhenUsed='false' Name='Colorful Shading'/> <w:LsdException Locked='false' Priority='72' SemiHidden='false' UnhideWhenUsed='false' Name='Colorful List'/> <w:LsdException Locked='false' Priority='73' SemiHidden='false' UnhideWhenUsed='false' Name='Colorful Grid'/> <w:LsdException Locked='false' Priority='60' SemiHidden='false' UnhideWhenUsed='false' Name='Light Shading Accent 1'/> <w:LsdException Locked='false' Priority='61' SemiHidden='false' UnhideWhenUsed='false' Name='Light List Accent 1'/> <w:LsdException Locked='false' Priority='62' SemiHidden='false' UnhideWhenUsed='false' Name='Light Grid Accent 1'/> <w:LsdException Locked='false' Priority='63' SemiHidden='false' UnhideWhenUsed='false' Name='Medium Shading 1 Accent 1'/> <w:LsdException Locked='false' Priority='64' SemiHidden='false' UnhideWhenUsed='false' Name='Medium Shading 2 Accent 1'/> <w:LsdException Locked='false' Priority='65' SemiHidden='false' UnhideWhenUsed='false' Name='Medium List 1 Accent 1'/> <w:LsdException Locked='false' UnhideWhenUsed='false' Name='Revision'/> <w:LsdException Locked='false' Priority='34' SemiHidden='false' UnhideWhenUsed='false' QFormat='true' Name='List Paragraph'/> <w:LsdException Locked='false' Priority='29' SemiHidden='false' UnhideWhenUsed='false' QFormat='true' Name='Quote'/> <w:LsdException Locked='false' Priority='30' SemiHidden='false' UnhideWhenUsed='false' QFormat='true' Name='Intense Quote'/> <w:LsdException Locked='false' Priority='66' SemiHidden='false' UnhideWhenUsed='false' Name='Medium List 2 Accent 1'/> <w:LsdException Locked='false' Priority='67' SemiHidden='false' UnhideWhenUsed='false' Name='Medium Grid 1 Accent 1'/> <w:LsdException Locked='false' Priority='68' SemiHidden='false' UnhideWhenUsed='false' Name='Medium Grid 2 Accent 1'/> <w:LsdException Locked='false' Priority='69' SemiHidden='false' UnhideWhenUsed='false' Name='Medium Grid 3 Accent 1'/> <w:LsdException Locked='false' Priority='70' SemiHidden='false' UnhideWhenUsed='false' Name='Dark List Accent 1'/> <w:LsdException Locked='false' Priority='71' SemiHidden='false' UnhideWhenUsed='false' Name='Colorful Shading Accent 1'/> <w:LsdException Locked='false' Priority='72' SemiHidden='false' UnhideWhenUsed='false' Name='Colorful List Accent 1'/> <w:LsdException Locked='false' Priority='73' SemiHidden='false' UnhideWhenUsed='false' Name='Colorful Grid Accent 1'/> <w:LsdException Locked='false' Priority='60' SemiHidden='false' UnhideWhenUsed='false' Name='Light Shading Accent 2'/> <w:LsdException Locked='false' Priority='61' SemiHidden='false' UnhideWhenUsed='false' Name='Light List Accent 2'/> <w:LsdException Locked='false' Priority='62' SemiHidden='false' UnhideWhenUsed='false' Name='Light Grid Accent 2'/> <w:LsdException Locked='false' Priority='63' SemiHidden='false' UnhideWhenUsed='false' Name='Medium Shading 1 Accent 2'/> <w:LsdException Locked='false' Priority='64' SemiHidden='false' UnhideWhenUsed='false' Name='Medium Shading 2 Accent 2'/> <w:LsdException Locked='false' Priority='65' SemiHidden='false' UnhideWhenUsed='false' Name='Medium List 1 Accent 2'/> <w:LsdException Locked='false' Priority='66' SemiHidden='false' UnhideWhenUsed='false' Name='Medium List 2 Accent 2'/> <w:LsdException Locked='false' Priority='67' SemiHidden='false' UnhideWhenUsed='false' Name='Medium Grid 1 Accent 2'/> <w:LsdException Locked='false' Priority='68' SemiHidden='false' UnhideWhenUsed='false' Name='Medium Grid 2 Accent 2'/> <w:LsdException Locked='false' Priority='69' SemiHidden='false' UnhideWhenUsed='false' Name='Medium Grid 3 Accent 2'/> <w:LsdException Locked='false' Priority='70' SemiHidden='false' UnhideWhenUsed='false' Name='Dark List Accent 2'/> <w:LsdException Locked='false' Priority='71' SemiHidden='false' UnhideWhenUsed='false' Name='Colorful Shading Accent 2'/> <w:LsdException Locked='false' Priority='72' SemiHidden='false' UnhideWhenUsed='false' Name='Colorful List Accent 2'/> <w:LsdException Locked='false' Priority='73' SemiHidden='false' UnhideWhenUsed='false' Name='Colorful Grid Accent 2'/> <w:LsdException Locked='false' Priority='60' SemiHidden='false' UnhideWhenUsed='false' Name='Light Shading Accent 3'/> <w:LsdException Locked='false' Priority='61' SemiHidden='false' UnhideWhenUsed='false' Name='Light List Accent 3'/> <w:LsdException Locked='false' Priority='62' SemiHidden='false' UnhideWhenUsed='false' Name='Light Grid Accent 3'/> <w:LsdException Locked='false' Priority='63' SemiHidden='false' UnhideWhenUsed='false' Name='Medium Shading 1 Accent 3'/> <w:LsdException Locked='false' Priority='64' SemiHidden='false' UnhideWhenUsed='false' Name='Medium Shading 2 Accent 3'/> <w:LsdException Locked='false' Priority='65' SemiHidden='false' UnhideWhenUsed='false' Name='Medium List 1 Accent 3'/> <w:LsdException Locked='false' Priority='66' SemiHidden='false' UnhideWhenUsed='false' Name='Medium List 2 Accent 3'/> <w:LsdException Locked='false' Priority='67' SemiHidden='false' UnhideWhenUsed='false' Name='Medium Grid 1 Accent 3'/> <w:LsdException Locked='false' Priority='68' SemiHidden='false' UnhideWhenUsed='false' Name='Medium Grid 2 Accent 3'/> <w:LsdException Locked='false' Priority='69' SemiHidden='false' UnhideWhenUsed='false' Name='Medium Grid 3 Accent 3'/> <w:LsdException Locked='false' Priority='70' SemiHidden='false' UnhideWhenUsed='false' Name='Dark List Accent 3'/> <w:LsdException Locked='false' Priority='71' SemiHidden='false' UnhideWhenUsed='false' Name='Colorful Shading Accent 3'/> <w:LsdException Locked='false' Priority='72' SemiHidden='false' UnhideWhenUsed='false' Name='Colorful List Accent 3'/> <w:LsdException Locked='false' Priority='73' SemiHidden='false' UnhideWhenUsed='false' Name='Colorful Grid Accent 3'/> <w:LsdException Locked='false' Priority='60' SemiHidden='false' UnhideWhenUsed='false' Name='Light Shading Accent 4'/> <w:LsdException Locked='false' Priority='61' SemiHidden='false' UnhideWhenUsed='false' Name='Light List Accent 4'/> <w:LsdException Locked='false' Priority='62' SemiHidden='false' UnhideWhenUsed='false' Name='Light Grid Accent 4'/> <w:LsdException Locked='false' Priority='63' SemiHidden='false' UnhideWhenUsed='false' Name='Medium Shading 1 Accent 4'/> <w:LsdException Locked='false' Priority='64' SemiHidden='false' UnhideWhenUsed='false' Name='Medium Shading 2 Accent 4'/> <w:LsdException Locked='false' Priority='65' SemiHidden='false' UnhideWhenUsed='false' Name='Medium List 1 Accent 4'/> <w:LsdException Locked='false' Priority='66' SemiHidden='false' UnhideWhenUsed='false' Name='Medium List 2 Accent 4'/> <w:LsdException Locked='false' Priority='67' SemiHidden='false' UnhideWhenUsed='false' Name='Medium Grid 1 Accent 4'/> <w:LsdException Locked='false' Priority='68' SemiHidden='false' UnhideWhenUsed='false' Name='Medium Grid 2 Accent 4'/> <w:LsdException Locked='false' Priority='69' SemiHidden='false' UnhideWhenUsed='false' Name='Medium Grid 3 Accent 4'/> <w:LsdException Locked='false' Priority='70' SemiHidden='false' UnhideWhenUsed='false' Name='Dark List Accent 4'/> <w:LsdException Locked='false' Priority='71' SemiHidden='false' UnhideWhenUsed='false' Name='Colorful Shading Accent 4'/> <w:LsdException Locked='false' Priority='72' SemiHidden='false' UnhideWhenUsed='false' Name='Colorful List Accent 4'/> <w:LsdException Locked='false' Priority='73' SemiHidden='false' UnhideWhenUsed='false' Name='Colorful Grid Accent 4'/> <w:LsdException Locked='false' Priority='60' SemiHidden='false' UnhideWhenUsed='false' Name='Light Shading Accent 5'/> <w:LsdException Locked='false' Priority='61' SemiHidden='false' UnhideWhenUsed='false' Name='Light List Accent 5'/> <w:LsdException Locked='false' Priority='62' SemiHidden='false' UnhideWhenUsed='false' Name='Light Grid Accent 5'/> <w:LsdException Locked='false' Priority='63' SemiHidden='false' UnhideWhenUsed='false' Name='Medium Shading 1 Accent 5'/> <w:LsdException Locked='false' Priority='64' SemiHidden='false' UnhideWhenUsed='false' Name='Medium Shading 2 Accent 5'/> <w:LsdException Locked='false' Priority='65' SemiHidden='false' UnhideWhenUsed='false' Name='Medium List 1 Accent 5'/> <w:LsdException Locked='false' Priority='66' SemiHidden='false' UnhideWhenUsed='false' Name='Medium List 2 Accent 5'/> <w:LsdException Locked='false' Priority='67' SemiHidden='false' UnhideWhenUsed='false' Name='Medium Grid 1 Accent 5'/> <w:LsdException Locked='false' Priority='68' SemiHidden='false' UnhideWhenUsed='false' Name='Medium Grid 2 Accent 5'/> <w:LsdException Locked='false' Priority='69' SemiHidden='false' UnhideWhenUsed='false' Name='Medium Grid 3 Accent 5'/> <w:LsdException Locked='false' Priority='70' SemiHidden='false' UnhideWhenUsed='false' Name='Dark List Accent 5'/> <w:LsdException Locked='false' Priority='71' SemiHidden='false' UnhideWhenUsed='false' Name='Colorful Shading Accent 5'/> <w:LsdException Locked='false' Priority='72' SemiHidden='false' UnhideWhenUsed='false' Name='Colorful List Accent 5'/> <w:LsdException Locked='false' Priority='73' SemiHidden='false' UnhideWhenUsed='false' Name='Colorful Grid Accent 5'/> <w:LsdException Locked='false' Priority='60' SemiHidden='false' UnhideWhenUsed='false' Name='Light Shading Accent 6'/> <w:LsdException Locked='false' Priority='61' SemiHidden='false' UnhideWhenUsed='false' Name='Light List Accent 6'/> <w:LsdException Locked='false' Priority='62' SemiHidden='false' UnhideWhenUsed='false' Name='Light Grid Accent 6'/> <w:LsdException Locked='false' Priority='63' SemiHidden='false' UnhideWhenUsed='false' Name='Medium Shading 1 Accent 6'/> <w:LsdException Locked='false' Priority='64' SemiHidden='false' UnhideWhenUsed='false' Name='Medium Shading 2 Accent 6'/> <w:LsdException Locked='false' Priority='65' SemiHidden='false' UnhideWhenUsed='false' Name='Medium List 1 Accent 6'/> <w:LsdException Locked='false' Priority='66' SemiHidden='false' UnhideWhenUsed='false' Name='Medium List 2 Accent 6'/> <w:LsdException Locked='false' Priority='67' SemiHidden='false' UnhideWhenUsed='false' Name='Medium Grid 1 Accent 6'/> <w:LsdException Locked='false' Priority='68' SemiHidden='false' UnhideWhenUsed='false' Name='Medium Grid 2 Accent 6'/> <w:LsdException Locked='false' Priority='69' SemiHidden='false' UnhideWhenUsed='false' Name='Medium Grid 3 Accent 6'/> <w:LsdException Locked='false' Priority='70' SemiHidden='false' UnhideWhenUsed='false' Name='Dark List Accent 6'/> <w:LsdException Locked='false' Priority='71' SemiHidden='false' UnhideWhenUsed='false' Name='Colorful Shading Accent 6'/> <w:LsdException Locked='false' Priority='72' SemiHidden='false' UnhideWhenUsed=false' Name='Colorful List Accent 6'/> <w:LsdException Locked='false' Priority='73' SemiHidden='false' UnhideWhenUsed='false' Name='Colorful Grid Accent 6'/> <w:LsdException Locked='false' Priority='19' SemiHidden='false' UnhideWhenUsed='false' QFormat='true' Name='Subtle Emphasis'/> <w:LsdException Locked='false' Priority='21' SemiHidden='false' UnhideWhenUsed='false' QFormat='true' Name='Intense Emphasis'/> <w:LsdException Locked='false' Priority='31' SemiHidden='false' UnhideWhenUsed='false' QFormat='true' Name='Subtle Reference'/> <w:LsdException Locked='false' Priority='32' SemiHidden='false' UnhideWhenUsed='false' QFormat='true' Name='Intense Reference'/> <w:LsdException Locked='false' Priority='33' SemiHidden='false' UnhideWhenUsed='false' QFormat='true' Name='Book Title'/> <w:LsdException Locked='false' Priority='37' Name='Bibliography'/> <w:LsdException Locked='false' Priority='39' QFormat='true' Name='TOC Heading'/> </w:LatentStyles> </xml><!{endif}--> <!{endif}--> That should be all you have to do. When the laser printer is fixed, simply change the HOLD back to PSLX. If switching to another laser printer that is defined in the ThinPrint list go to step Three below. Step Two: ( ONLY IF SENDING DRs TO An OLD IBM 4224 QNET PRINTER) If sending to another laser printer skip to Step Three below. ) Change DR printing to qnet printer. (this should only apply to printing drs and only at paperless terminals) Go to http://shell2.dtc.corp/nafas/clients/stationlockout/ Choose LASER DR in the drop down. Find the terminal number on Unlocked Side. Move the affected terminal from the unlocked side to the locked side and click save. Click SAVE. To change drs back to laser printer, follow steps above to move from locked to unlocked. See screenshot below: Setp Three: When switching to another laser printer that is defined in the ThinPrint list after you put the PSLX line on hold you will need to create a new PSLX line with the printer information for the printer you are switching to.The example below shows the xerox4260 on HOLD and the new PLSX line shows the 2360 printer that the print was switched to. NOTE: All of the old IBM 4224 Printers will soon be gone from the terminals and we will no longer have them. Once this happens we will no longer do anything with the DR Station Lockout screen when switching printers. That screen is only used when switching to the IBM printers. This should already be a very rare case. Soon only Canada and Puerto Rico will have the IMB 4224 printers still in use and then only for a few customs items that must still print on those for now. But those will also eventually be replaced. These directions will be revised at that time. Contacts
+p85
+sg64
+VHow to Change City Manifest Printing to Another Printer from ThinPrint
+p86
+sg66
+VKB0010038
+p87
+sa(dp88
+g62
+VATTN: For a person to print to a home printer from VPN and/or Remote Desktop Connection, they must be logged on the VPN with ABF Corporate connection. Use home printer while controlling work pc with Remote Desktop Connection: To make a local printer available in a Remote Desktop session: In Windows 7, Click Start > All Programs > Accessories > Communications, and then click Remote Desktop Connection. For Windows 8: Swipe left from right side of screen Tap Search Icon Type Remote Desktop Connection Tap Remote Desktop Connection App Click Options in the Remote Desktop Connection dialog box. Click the Local Resources tab. Check Printers in the Local Devices box (Figure 1) Click Connect. Use home printer with Corporate Laptop logged onto ABF Corporate VPN: Plug printer into laptop Install drivers for the printer (may need to download drivers from manufacturer website) Set printer as default to print from Corporate VPN session Notes: Using printer with corporate laptop may require help from Field support. Feel free to create ticket for them. Figure 1
+p89
+sg64
+Vrequest to add home printer to Corp laptop
+p90
+sg66
+VKB0010836
+p91
+sa(dp92
+g62
+VHow to clear print spool when 'access denied' in devices and printers Instructions: First - Stop the print service by: Click Start Right click on computer Click Manage Sign in as admin (may take a while for computer management screen to come up.) Click Services & Applications Click Services Click on Print Spooler Click on Stop the service (in upper Left, blue letters) Keep this location open so you can restart the service after deleting files from printer folders files. Second - Delete all files in the printer folder by: Right click on START Open Windows Explorer Navigate to C:\u005cWindows\u005cSystem32\u005cSpool\u005cPrinters (may have to continue and sign in as admin) Delete all files in the printers folder (do not delete the folder itself) Third - Start the print service by: (If you closed the print spooler folder re-navigate to printer spooler ; see first step) Click Start the service (in Print Spooler folder - upper left, blue letters)
+p93
+sg64
+VError Access Denied when trying to delete print jobs from the printer queue
+p94
+sg66
+VKB0011385
+p95
+sa(dp96
+g62
+VOne PC (OKCJWALKER) was designated as the print server and the printers were shared out to the other PCs. Here is a list of those shares: \u005c\u005cokcjwalker\u005cABLOCKAcct547 Brother laser HL-5470 located in the front of the office\u005c\u005cokcjwalker\u005cABLOKCMaintHP6840 HP Deskjet 6840 located in the front of the office\u005c\u005cokcjwalker\u005cABLOKCWestHL5250 Brother laser HL-5250 located in the back corner of the office\u005c\u005cokcjwalker\u005cABLOKCXRX3550 Xerox 3550 located in the middle of the office PC Name \u005c\u005cokcschmid was set as a backup print server in the event PC \u005c\u005cokcjwalker goes down. The Xerox 3550 was setup to network scan using \u005c\u005cokcjwalker as the host to the share. Support team for the OKC is as follows (same as FVI at ABNorth): Terri Cunningham x6493Angie Jamieson x8490Khamp Sourinphoumy x8402 If you get a call from OKC Logistics with a computer problem and they are not able to do their job, during normal business hours create an Info Center ticket and mark it Time Critical. You can also and especially after or before hours call the ICGO Support on call. Outside of normal business hours (even 5 or 10 minutes), go to the oncall list: In ABF Explorer click on Help, click on Oncall, click the down arrow by Search and choose the correct support group. See figure 1 below. Figure 1
+p97
+sg64
+VOKC Logistics Oklahoma City Printer Set up / Printers / Support Person
+p98
+sg66
+VKB0011242
+p99
+sa(dp100
+g62
+VTools How To: Troubleshoot City Manifests not printing on ThinPrint server Instructions: Log on to the host field pc. Open the print queue to see if the print jobs are in there. If nothing is present print a test page and confirm that it prints. If it will not print, open the printer properties, select the ports tab, and click on Configure Port. Write down the Printer Name / IP Address. Confirm that you can ping the printer name or open the printer in a web browser (Xerox 3550's & 4260's) from NetScan (soccer ball program) If everything is connected and printing from the workstation, restart the 'TP Client Service Windows' Service. To do this on the host pc right click on My Computer or Computer and go to Manage. On the left click on Services and Applications. Click on Services and expand the columns so you can see names and the Status lines. Find TP Client Service Windows in the list. Look at the status. If the status is STOPPED, right click on the name and click on START. If the status is Started, right click then name and STOP, then once it's stopped, right click on the name and START it again. Try printing the manifest again. If the manifest doesn't print, unplug the printer from the network cable and the power for about 60 seconds, then plug it back up, and try to print again. If none of the above works, check your text file (\u005c\u005cdtc\u005cfiles\u005cglobal\u005cinformationcenter\u005cthinprint) to see if there is a backup printer you can put in fil sta dep and if there is you can change it to that. Even if there is a backup printer, you will still need to create an Info Center ticket for them to fix the problem on the printer that is not working. Contacts
+p101
+sg64
+VHow to - Troubleshoot City Manifests not printing on ThinPrint server
+p102
+sg66
+VKB0010042
+p103
+sasS'TTS_TOKEN'
+p104
+V%2FNAIfHnW6%2FW9zs5nF8%2Fe6l%2FftUPCiDUdPltz%2FpAna60fya66oMsmhL7WuPK6nPbDQfflol8%2BBeCsz2PUQHLcrz7j6z2oWGy3i7URY8ZC7aoCgYbkiJFDCk9epR9U1wsdjbrSypp99QCFbH6dbS5x1jKYCkhvSmOh%2F85Oe3b51jxqaihprxrx1J1xPPeRSRo9mSTtelvDEbb%2Fv8GJUKY2p7BDvPuSnxTeoehm3zumf%2FXvej7VcKFlasV8Xo8t9xQF30NVA85azHZ2i5WH6nFOg9Xj5xESCQGnbpOklOk2fK9H36AgEFriNU2tfwrrMY459%2BV%2BPAnVZvZadhRbP%2B6Cyu2m7mMLfGjp%2Bl35B4I5SW0ZudEoz%2BQIySbHOynfI6UfGYgjnVVqUhEmOMq93VFhQm%2FXTNakxKGEpY2kktRUkSb6%2F5NMRJNXmRMrhVoSjWFGzWhRjNFuI3S2o2%2BDS9eRoUbvmRlsIlFi%2F%2B1SrU3VFLi4AStUaK3qwMC7AZevoWuBONdCb8zydueO9pFUutWg%2B%2FIeWPuGK6in8mnZiKKKtM5gWl1YqJ%2B%2BlYxwhQdi05c4LBSbv%2FKdF%2BLPTSqdOD30OZPnmfr3iKAj5U%2B%2Fk6mlrF8fMWLG2ESDCBbkb5V136YM0nW%2FlCaaCILsG9fhl6o1WQvl%2BkB1MKhjh%2FGGxA8j8aUG82Yc3jtMZYv%2F1u9p%2Bhm8jlNYCrBxbsnORODMjGYToMusQ8Axj9BuA5yZcQ4wTykkUNca5t2b9gbd1KOq7sCcmbVvTSCEDb1%2BOWgJxF7bvUIw60fUARxYH6HIJOR0H5lTgv0jgvM4sNoSCe2bx7cye2QDwtW8id2nuskJmGT5xbtSb5yFN29Y
+p105
+sS'_accessed_time'
+p106
+F1457990724.8499999
+sS'_creation_time'
+p107
+F1457990659.335
+ss.

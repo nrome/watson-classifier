@@ -1,0 +1,301 @@
+(dp1
+S'session'
+p2
+(dp3
+S'_accessed_time'
+p4
+F1468205949.832
+sS'POSTS'
+p5
+(lp6
+(dp7
+S'text'
+p8
+VHey, I'm Watson. I can pick the perfect BMW for you. Ready?
+p9
+sS'style'
+p10
+S'Watson'
+p11
+sS'datetime'
+p12
+S'2016-07-10 19:57'
+p13
+sS'name'
+p14
+g11
+sS'icon'
+p15
+S''
+sa(dp16
+S'text'
+p17
+Vyou bet
+p18
+sS'style'
+p19
+S'Partner'
+p20
+sS'icon'
+p21
+S''
+sS'name'
+p22
+g20
+sS'datetime'
+p23
+S'2016-07-10 19:57'
+p24
+sa(dp25
+g17
+VIn order for me to pick out your perfect match, I need to take a look at your social bits and bobs.
+p26
+sg19
+S'Watson'
+p27
+sg21
+S''
+sg22
+g27
+sg23
+S'2016-07-10 19:57'
+p28
+sa(dp29
+S'text'
+p30
+Vnot at this time
+p31
+sS'style'
+p32
+S'Partner'
+p33
+sS'datetime'
+p34
+S'2016-07-10 19:58'
+p35
+sS'name'
+p36
+g33
+sS'icon'
+p37
+S''
+sa(dp38
+g30
+VStill needing to take a look at your social bits and bobs.
+p39
+sg32
+S'Watson'
+p40
+sg34
+S'2016-07-10 19:58'
+p41
+sg36
+g40
+sg37
+S''
+sa(dp42
+S'text'
+p43
+VUh...rather not
+p44
+sS'style'
+p45
+S'Partner'
+p46
+sS'icon'
+p47
+S''
+sS'name'
+p48
+g46
+sS'datetime'
+p49
+S'2016-07-10 19:58'
+p50
+sa(dp51
+g43
+VAs you wish. I'll just ask you a few questions then to get to know you a little better. Ready to begin?
+p52
+sg45
+S'Watson'
+p53
+sg47
+S''
+sg48
+g53
+sg49
+S'2016-07-10 19:58'
+p54
+sa(dp55
+S'text'
+p56
+Vyes
+p57
+sS'style'
+p58
+S'Partner'
+p59
+sS'datetime'
+p60
+S'2016-07-10 19:58'
+p61
+sS'name'
+p62
+g59
+sS'icon'
+p63
+S''
+sa(dp64
+g56
+VFirst question. In their unguarded moments, how would your friends describe you?
+p65
+sg58
+S'Watson'
+p66
+sg60
+S'2016-07-10 19:58'
+p67
+sg62
+g66
+sg63
+S''
+sa(dp68
+S'text'
+p69
+VI'm fearless, put me in a new situation and I thrive.
+p70
+sS'style'
+p71
+S'Partner'
+p72
+sS'icon'
+p73
+S''
+sS'name'
+p74
+g72
+sS'datetime'
+p75
+S'2016-07-10 19:58'
+p76
+sa(dp77
+g69
+VI'll bet most people find that confidence of yours quite attractive. Next question. What's your idea of fun?
+p78
+sg71
+S'Watson'
+p79
+sg73
+S''
+sg74
+g79
+sg75
+S'2016-07-10 19:58'
+p80
+sa(dp81
+S'text'
+p82
+VLike to workout. Go to the gym several times a week.
+p83
+sS'style'
+p84
+S'Partner'
+p85
+sS'datetime'
+p86
+S'2016-07-10 19:58'
+p87
+sS'name'
+p88
+g85
+sS'icon'
+p89
+S''
+sa(dp90
+g82
+VAn active lifestyle like that definitely keeps you young. Last question, Tell me a little bit about the kind of driving you do and your driving style.
+p91
+sg84
+S'Watson'
+p92
+sg86
+S'2016-07-10 19:58'
+p93
+sg88
+g92
+sg89
+S''
+sa(dp94
+S'text'
+p95
+VI just want a car that's fun to drive
+p96
+sS'style'
+p97
+S'Partner'
+p98
+sS'icon'
+p99
+S''
+sS'name'
+p100
+g98
+sS'datetime'
+p101
+S'2016-07-10 19:58'
+p102
+sa(dp103
+g95
+VYou sound like a person who expects more out of life. To see the BMW model just right for you, walk me through some of your priorities and click the button!
+p104
+sg97
+S'Watson'
+p105
+sg99
+S''
+sg100
+g105
+sg101
+S'2016-07-10 19:58'
+p106
+sa(dp107
+S'text'
+p108
+VThere's no one quite like you, and I can see you enjoying yourself behind the wheel of a <b>M235i Conv.</b>.
+p109
+sS'style'
+p110
+S'Watson'
+p111
+sS'datetime'
+p112
+S'2016-07-10 19:59'
+p113
+sS'name'
+p114
+g111
+sS'icon'
+p115
+S''
+sasS'DIALOG_CLIENT_ID'
+p116
+I4238298
+sS'STT_TOKEN'
+p117
+VlrhyfAB7b0sVQxAtSuxLHwXXqqNQuIdfifgM1gmQPFN2rI3A85wvESCdvtZbachwtKVgBEXUyBzlHiARO6QlYpcDzKDNeo1COkBeKatMvANYFY4uj0s4WjPSMOLepqNKEcMy3hracXdOkhadb8UXNM1Ye7k50VxwknFZHJJ93h4y1KIfaDkwL9Lwn7WlPWNV6oK6XRYTg6h2e64pktDXLWZ1BLWsTC8ecRJg1AmsDcq%2FO0AXhs9alS3Hhmol%2BDeJd7aTq9XzB08OIcBbuybcUfDtwlJXuGxWMSTWQ12rjE%2BkBJ6pj6meRbs1fcj%2FV0yqjKGfPVHmSHRgiQBrZ56vUbnuPw99VDsZ7WyzTshPEYDuWovs1Q5hABfTICN7JWR4r%2F4JgPw9fHDxUl6cWaHBfR4dsNOMyuzsBjb0Z%2FJ7KW99NSvVeTSR4MaKUoNwIvyH5CCviq%2FvKEmImN2lWvdy8qhkELcLqsWHFH3y9K%2Bx0Fqs72yHU0qIhDHNRdCSZ5hOmx5E0B%2B20a0yolQ29msQHr2DqQ4z0OY2%2FuVU7YTR6VaW4pI1E96VBECJk%2F6CeFeXY%2BCEkseCxj7W4GVxeHtp1XD8gTCnZ7aGDXko1tMG5Mgyq6flBrorG9bZkPck6xi0godh0udxce0iC84WR44U2868%2FrY01RvPz19sY7kQe52go05770t0NdUtEV%2FWcchqDOtbDFrxf%2BdCgrNDxreJN5h8ntZ3aE2AunB2zdzIPkL0t3lvY%2BPl6g8B83jI%2B1gUT0xi4dMBNOQ3Ogl5eQ4sspkUTx4R96ys7jONa6TbDOw7IigcyI7%2Bt2DcSnhyFf0tp%2BnpfB4dI%2BDnoqxw3Mitz%2BHMNtQQJEsf
+p118
+sS'_creation_time'
+p119
+F1468205859.3610001
+sS'CUSTOMER_PROFILE'
+p120
+V2 Series
+p121
+sS'TTS_TOKEN'
+p122
+VXRo0oCJtoBf4ACBAerKojdPvebh2jfM9iE5kMY51%2BR9H3%2FnV81BxcMxZKGks%2BlZk4HyLd0Lg12mVwk7aPC5oLss11xkQBUHQBDAHMjyLvuLVDaGhWiH3NqkJfU3r2bh3mhegww6fL0VpdS0q85elBHupyM2CaA%2BZQZ6ROgle2a1vR%2BCvnhga7KlV5kZUn7sjXWpXvR0%2B99Ner8dtRIomsOQciS6mPPKtq2PtzmRzEXBSaMHH%2F1OpdYo09C5YQMeyXs1rT%2Fo7bjaSaUC%2FjOHGRMIDnZHCeif%2BvDegYrWp1QXfVW6n5fQ9OweWfUkIHD1BIigG06v4c3o6fLllxC2rNxM00PUFwDZuoLzurF2V3alY3V2rUurGlyysFDzvrSvQqFKqoJ8u4K9YHfIxBZY0ge3b61u8JxFu5dWBUS%2Bd0K%2Bj8whtHvlo18MM%2B3FJS5cjp7P60SivFqty%2BlIFho3Mm1XnNX3QvQu%2F76WvzsxZYcxVtvxHb4m7CMaugJvH70NKyEZMs78B9sJJjn5kXJ6ZFe60lt%2BVloz%2FoTPvGceNzZt9zUalvYOX1KFEgW8REvb8ZSlpcXNtO7mUQ72Rt4h%2ByJ08F1l%2F%2FNIPwnBbjrYIRoEUfQMwTesyCIerLlLnXJTDy8%2BrwXsjyFBtAm0%2FehX88TKa0sT8ZFgtRviU1FooPc6LX1Xm1mPi7z%2B2YbpgLfkMp6QXBGlfyJoC5x0zWbjLMmtFnqewPaBG8bvuMUP6ohoF5rJcRJHvDt8kZA78gx57m3rwaXMqZgvLp%2BmswzCUguPA6oYg5iwtm1Y1uyOCUQoNBFR7CeYbOVL7IIxo3gGdQTHgmMjkPAmOuprX%2BADrRtBp1%2F4yozBV
+p123
+sS'DIALOG_CONVERSATION_ID'
+p124
+I4055378
+ss.

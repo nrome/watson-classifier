@@ -1,0 +1,212 @@
+(dp1
+S'session'
+p2
+(dp3
+S'DIALOG_CONVERSATION_ID'
+p4
+I1292625
+sS'POSTS'
+p5
+(lp6
+(dp7
+S'text'
+p8
+VHey, I'm Watson. I can pick the perfect BMW. Ready?
+p9
+sS'style'
+p10
+S'Watson'
+p11
+sS'icon'
+p12
+S''
+sS'name'
+p13
+g11
+sS'datetime'
+p14
+S'2016-03-27 22:13'
+p15
+sa(dp16
+S'text'
+p17
+VSure, let's do it
+p18
+sS'style'
+p19
+S'Partner'
+p20
+sS'datetime'
+p21
+S'2016-03-27 22:14'
+p22
+sS'name'
+p23
+g20
+sS'icon'
+p24
+S''
+sa(dp25
+g17
+VIn order for me to pick out your perfect match, I need to take a look at your social bits and bobs.
+p26
+sg19
+S'Watson'
+p27
+sg21
+S'2016-03-27 22:14'
+p28
+sg23
+g27
+sg24
+S''
+sa(dp29
+S'text'
+p30
+VMmmm....
+p31
+sS'style'
+p32
+S'Partner'
+p33
+sS'icon'
+p34
+S''
+sS'name'
+p35
+g33
+sS'datetime'
+p36
+S'2016-03-27 22:14'
+p37
+sa(dp38
+g30
+VStill needing to take a look at your social bits and bobs.
+p39
+sg32
+S'Watson'
+p40
+sg34
+S''
+sg35
+g40
+sg36
+S'2016-03-27 22:14'
+p41
+sa(dp42
+S'text'
+p43
+VI would rather npt
+p44
+sS'style'
+p45
+S'Partner'
+p46
+sS'datetime'
+p47
+S'2016-03-27 22:14'
+p48
+sS'name'
+p49
+g46
+sS'icon'
+p50
+S''
+sa(dp51
+g43
+VStill needing to take a look at your social bits and bobs.
+p52
+sg45
+S'Watson'
+p53
+sg47
+S'2016-03-27 22:15'
+p54
+sg49
+g53
+sg50
+S''
+sa(dp55
+S'text'
+p56
+VI would rather not
+p57
+sS'style'
+p58
+S'Partner'
+p59
+sS'icon'
+p60
+S''
+sS'name'
+p61
+g59
+sS'datetime'
+p62
+S'2016-03-27 22:15'
+p63
+sa(dp64
+g56
+VAs you wish. Then how about I just ask you a few questions to get to know you a little better. Ready to begin?
+p65
+sg58
+S'Watson'
+p66
+sg60
+S''
+sg61
+g66
+sg62
+S'2016-03-27 22:15'
+p67
+sa(dp68
+S'text'
+p69
+VSure
+p70
+sS'style'
+p71
+S'Partner'
+p72
+sS'datetime'
+p73
+S'2016-03-27 22:15'
+p74
+sS'name'
+p75
+g72
+sS'icon'
+p76
+S''
+sa(dp77
+g69
+VFirst question. Give me five words best decribe you and tell me why.
+p78
+sg71
+S'Watson'
+p79
+sg73
+S'2016-03-27 22:15'
+p80
+sg75
+g79
+sg76
+S''
+sasS'DIALOG_CLIENT_ID'
+p81
+I1304589
+sS'STT_TOKEN'
+p82
+Vqy3Gtg9pICoObTLvsPPv6aYWbrZh89IspkRPaixO6X2jIm97eQyKO%2FitcRdO8eOWdcrJV2%2BhsTihkuV1DcM3e%2FaodNcPEmUcbvfhjSivnB0nhLXnYbU9QLdjXlYSd%2FRNXNQH9MjdVb%2FQA07eyw8GfHb1NNk13By4f7BoHc9HpZWCGrPTh2VtLZ3B1PxZY8zhJp0uSwcpuuh4eR7STxlrpesSwZ2PcTkqEuhWcHcBCTIHwgkYovGPyx5EgJABY%2FCExJty8m1DNf%2Fu1DvGLWZ8k%2BS54f3zzY9oD7REp0%2BQwbwQAKlKywDMGZCL3MCMU78%2BTnCBkK2yppJSngTmDkOG8zhPmHaeQbN9OELxbZUk16BM5x1SHs0Hfy2Am2y8B7S%2B72KU%2Fzeke%2BtDLVjteDPIR2kas0u9p%2Fhwz98keBUiw3Y8ENclJb%2B2S8zF4SNb6SQLioHpRblIIOQJwTpphOhFYzBExqIatT7OPFbVO1OmRe9rAB%2FCtJGkQ8hBaePHGpV6DiNePgKiZocP%2BbAnSz5JVvgUsQhss0uCn5Rn5KCtVOpS4cBziygT6uNL2Vzqw1rBpUev98VR4hJ1DF1ActCY1rFBGfu6wnQIUvJS2fZ%2Bxs3yogdJ7Yn0nT5hHfSjAl7mcx%2FL7zFSLF35mScFHqas1ELmXC%2BkxpWmWTgN1CPYFWkyNZ%2BcUx7a0VghnT5Tom639oSoaQ2Nag6HmTs9zrDAexLOIp%2F%2F109M5em%2BNf6R7%2BY4mu9EHIgj9LhCud8lLfR95hhGF%2FIUNV%2BIBrtkR4vSErcP2N6GTVWaGzqxz6haTDIxnddlwAMlMyfcuEY%2F7sLRfG7isqPvU%2Fw1OXDSjncY%2FUd5Xwzb%2B2oM
+p83
+sS'TTS_TOKEN'
+p84
+Vp351SxPKoY%2FDEee8K2pjLcMpUyKbsN2Nmw3GB6bAqMD0xDJIZ2Nd4Vbqd%2F9eL0Csndyv%2FDChYkuid4vissIlnhn2fEpV%2BlhwjdJMfIEAP1HQYoc6SVzvPJyXl9BABWt2lN4F8Dewux9iOvQXzgjti0i5YztbMVNsD8%2B1SZn6wWMKfivMwvdBYOpaM2kosnrHiRrgArr0MC9d9HkKPHmxTp9QIDlgzcumSMcGFb%2BGxiDnfkZ6tGe3l4D69G%2BBNCqEL%2BQd%2FVhkRh9hHLEM%2BoavJYHIMoJk0nxPrNHXEIU2pJrjrhJ6Y32wT%2B%2BokfIO%2B7JIFCwcrysrP393dsi8%2ByGLx8%2FRMzwrJS3mBSdaMzQj3RkgRTUCi5dMBoYcyLIYYNi0IRN410OqiQuZsG73xrnsJRQD6L%2F9Clyw3Pstpob0yFcKT8VoqcY7PQqnin03CZgciYGKhnomChY7NSP0eUS1Ym32KVjt895LIRQ1i%2FHtWMso6U7cHb%2BY00hVJWoFShAiN75GY6gK0T73bb8IIlEwGtZMF5KUnnrG79RvwM5WrWA3eNGShh6BRBEICW6bLU%2FLDdrof0Afab3dJIO0a%2FUnDhmplawSqYclks5mz0ttvOs41fdBMYYPp%2BDeiVEgV%2FbwYUTN%2FUiURJ09ttWX1EUVyjuVyyZQMjfjWQmdJcHfBO0%2FgfaqtsUiOlZgrJrqijD5BI0hXHQRpawnIOQVrGwFxx3k121ymm3rXu2lGsVqkfYhoy2Pr%2B4G40nBf5541V2%2BUNI0nugyYVKSFtlmwHWP7Xk2QEDnWLS3UyfVqzdxuOaHNjW5S3SCLIieo7tgJXfk5quQ6WYDzAWIpv6t5qcI7ARb3am2sOgI
+p85
+sS'_accessed_time'
+p86
+F1459142137.2360001
+sS'_creation_time'
+p87
+F1459140022.1700001
+ss.

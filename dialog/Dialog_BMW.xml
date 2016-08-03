@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dialog xsi:noNamespaceSchemaLocation="WatsonDialogDocument_1.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<flow>
+		<folder label="Main">
+			<output>
+				<prompt selectionType="RANDOM">
+					<item>Hey, I'm Watson. I can pick the perfect BMW for you. Ready?</item>
+				</prompt>
+			</output>
+			<output id="output_MAIN">
+<!--			
+				<prompt selectionType="SEQUENTIAL" id="prompt_MAIN">
+					<item>How may I help you?</item>
+				</prompt>
+-->				
+				<getUserInput id="getUserInput_MAIN">
+					<search ref="folder_Live_Content"/>
+					<default>
+						<output>
+							<prompt selectionType="RANDOM">
+								<item>I'm sorry I didn't understand your response. Would you like IBM Watson to pick the right BMW for you?</item>
+								<item>I didn't quite get that. Do you want IBM Watson to pick the right BMW for you?</item>
+								<item>Sorry, I'm not following you at the moment. Want to let IBM Watson pick the right BMW for you?</item>
+							</prompt>
+						</output>
+					</default>
+				</getUserInput>
+			</output>
+		</folder>
+		<folder label="Library">
+			<folder label="Live Content" id="folder_Live_Content">
+				<folder label="Program" id="folder_Location">
+					<input>
+						<grammar>
+							<item>$ yes</item>
+						</grammar>
+						<output>
+							<prompt selectionType="RANDOM">
+								<item>In order for me to pick out your perfect match, I need to take a look at your social bits and bobs.[##FORM##][p]Click to log in to your favorite sounding board...[br][img src="/static/images/facebook-128.png" alt="Facebook" height="64" width="64"] [img src="/static/images/twitter1-128.png" alt="Twitter" height="64" width="64"] [img src="/static/images/instagram-128.png" alt="Instagram" height="64" width="64"] [img src="/static/images/linkedin-128.png" alt="LinkedIn" height="64" width="64"][/p]</item>
+							</prompt>
+							<getUserInput id="getUserInput_SocialMedia">
+								<input>
+									<grammar>
+										<item>$ rather not</item>
+										<item>$ not now</item>
+										<item>$ don't want</item>
+										<item>$ prefer not</item>
+									</grammar>
+									<action varName="personality" operator="SET_TO_BLANK"/>
+									<action varName="interests" operator="SET_TO_BLANK"/>
+									<action varName="driving_style" operator="SET_TO_BLANK"/>
+									<action varName="insight1" operator="SET_TO">mature</action>
+									<action varName="final_questions" operator="SET_TO">[form action='/decide' method='POST']
+[p]Tell me what you're thinking...[/p]
+[p]
+[span style='width: 300px; display:inline-block;']How much giddy-up?[/span][select name='power'][option value='1']Merge with ease[/option][option value='2']Leave 'em in the dust[/option][option value='3']Shot out of a cannon[/option][/select][br]
+[span style='width: 300px; display:inline-block;']How many butts in the back seat?[/span][select name='passengers'][option value='1']Empty nester[/option][option value='2']The occaisional buddy[/option][option value='3']Tribe of kiddos[/option][/select][br]
+[span style='width: 320px; display:inline-block;']Willing to spend?[/span][select name='budget'][option value='1']Student's budget[/option][option value='2']Life is good[/option][option value='3']Money's no object[/option][/select][br]
+[/p]
+[p]What's the BMW that's just right for me[br][input type='submit' name='response-input' value='Show me!'/][/p]
+[/form]</action>
+									<output id="output_NoSocialMedia">
+										<prompt selectionType="RANDOM">
+											<item>As you wish. I'll just ask you a few questions then to get to know you a little better. Ready to begin?</item>
+										</prompt>
+										<getUserInput>
+											<input>
+												<grammar>
+													<item>*</item>
+												</grammar>
+												<goto ref="output_Personality"/>
+											</input>
+										</getUserInput>
+									</output>
+								</input>
+								<output>
+									<prompt selectionType="RANDOM">
+										<item>Still needing to take a look at your social bits and bobs.[##FORM##][p]Click to log in to your favorite sounding board...[br][img src="/static/images/facebook-128.png" alt="Facebook" height="64" width="64"] [img src="/static/images/twitter1-128.png" alt="Twitter" height="64" width="64"] [img src="/static/images/instagram-128.png" alt="Instagram" height="64" width="64"] [img src="/static/images/linkedin-128.png" alt="LinkedIn" height="64" width="64"][/p]</item>
+									</prompt>
+									<goto ref="getUserInput_SocialMedia"/>
+								</output>
+							</getUserInput>
+						</output>
+					</input>
+					<input>
+						<grammar>
+							<item>$ no</item>
+						</grammar>
+						<output>
+							<prompt selectionType="RANDOM">
+								<item>OK, but remember there's nothing to lose and this could be fun. Perhaps I can still entice you to let IBM pick the right BMW for you?</item>
+							</prompt>
+						</output>
+					</input>
+					<input>
+						<grammar>
+							<item>2 Series</item>
+						</grammar>
+						<output>
+							<prompt selectionType="RANDOM">
+								<item>You sound like a person who expects more out of life. To see the BMW model just right for you, walk me through some of your priorities and click the button![##FORM##]{final_questions}</item>
+							</prompt>
+						</output>
+					</input>
+					<input>
+						<grammar>
+							<item>6 Series</item>
+						</grammar>
+						<output>
+							<prompt selectionType="RANDOM">
+								<item>You sound like a person who demands a lot but still needs a little adrenaline in your life. To see the BMW model just right for you, walk me through some of your priorities and click the button![##FORM##]{final_questions}</item>
+							</prompt>
+						</output>
+					</input>
+					<input>
+						<grammar>
+							<item>X3</item>
+						</grammar>
+						<output>
+							<prompt selectionType="RANDOM">
+								<item>With your active lifestyle, you need a vehicle that can do it all. To see the BMW model just right for you, walk me through some of your priorities and click the button![##FORM##]{final_questions}</item>
+							</prompt>
+						</output>
+					</input>
+					<input>
+						<grammar>
+							<item>[##INSIGHT##] *</item>
+						</grammar>
+						<input>
+							<grammar>
+								<item>$ (Insight)={insight1} * (Insight)={insight2} * (Insight)={insight3} * (Insight)={insight4}</item>
+								<item>$ (Insight)={insight1} * (Insight)={insight2} * (Insight)={insight3} (Insight)={insight4}</item>
+								<item>$ (Insight)={insight1} * (Insight)={insight2} (Insight)={insight3} * (Insight)={insight4}</item>
+								<item>$ (Insight)={insight1} (Insight)={insight2} * (Insight)={insight3} * (Insight)={insight4}</item>
+								<item>$ (Insight)={insight1} (Insight)={insight2} (Insight)={insight3} * (Insight)={insight4}</item>
+								<item>$ (Insight)={insight1} * (Insight)={insight2} (Insight)={insight3} (Insight)={insight4}</item>
+								<item>$ (Insight)={insight1} (Insight)={insight2} * (Insight)={insight3} (Insight)={insight4}</item>
+								<item>$ (Insight)={insight1} (Insight)={insight2} (Insight)={insight3} (Insight)={insight4}</item>
+								<item>$ (Insight)={insight1} * (Insight)={insight2} * (Insight)={insight3}</item>
+								<item>$ (Insight)={insight1} (Insight)={insight2} * (Insight)={insight3}</item>
+								<item>$ (Insight)={insight1} * (Insight)={insight2} (Insight)={insight3}</item>
+								<item>$ (Insight)={insight1} (Insight)={insight2} (Insight)={insight3}</item>
+								<item>$ (Insight)={insight1} * (Insight)={insight2} </item>
+								<item>$ (Insight)={insight1} (Insight)={insight2}</item>
+								<item>$ (Insight)={insight1}</item>
+							</grammar>
+							<action varName="insight1" operator="SET_TO">{insight1.value:main}</action>
+							<action varName="insight2" operator="SET_TO">{insight2.value:main}</action>
+							<action varName="insight3" operator="SET_TO">{insight3.value:main}</action>
+							<action varName="insight4" operator="SET_TO">{insight4.value:main}</action>
+							<output>
+								<prompt selectionType="RANDOM">
+									<item>Based on these insights. You are: {insight1} {insight2} {insight3} {insight4}</item>
+								</prompt>
+							</output>
+						</input>
+						<output>
+							<prompt selectionType="RANDOM">
+								<item>Based on insights into your personality.</item>
+							</prompt>
+						</output>
+					</input>
+				</folder>
+			</folder>
+		</folder>
+		<folder id="folder_questions">
+			<output id="output_Personality">
+				<prompt selectionType="RANDOM">
+					<item>First question. In their unguarded moments, how would your friends describe you?</item>
+				</prompt>
+				<getUserInput>
+					<input>
+						<grammar>
+							<item>$ confident</item>
+						</grammar>
+						<action varName="personality" operator="SET_TO_USER_INPUT"></action>
+						<action varName="next_question" operator="SET_TO">I'll bet most people find that confidence of yours quite attractive. Next question. What's your idea of fun?</action>
+						<goto ref="output_Interests"/>
+					</input>
+					<input>
+						<grammar>
+							<item>*</item>
+						</grammar>
+						<action varName="personality" operator="SET_TO_USER_INPUT"></action>
+						<action varName="next_question" operator="SET_TO">Next question. What's your idea of fun?</action>
+						<goto ref="output_Interests"/>
+					</input>
+				</getUserInput>
+			</output>
+			<output id="output_Interests">
+				<prompt selectionType="RANDOM">
+					<item>{next_question}</item>
+				</prompt>
+				<getUserInput>
+					<input>
+						<grammar>
+							<item>$ active</item>
+						</grammar>
+						<action varName="interests" operator="SET_TO_USER_INPUT"></action>
+						<action varName="next_question" operator="SET_TO">An active lifestyle like that definitely keeps you young. Last question, Tell me a little bit about the kind of driving you do and your driving style.</action>
+						<goto ref="output_DrivingStyle"/>
+					</input>
+					<input>
+						<grammar>
+							<item>*</item>
+						</grammar>
+						<action varName="interests" operator="SET_TO_USER_INPUT"></action>
+						<action varName="next_question" operator="SET_TO">Last question, Tell me a little bit about the kind of driving you do and your driving style.</action>
+						<goto ref="output_DrivingStyle"/>
+					</input>
+				</getUserInput>
+			</output>
+			<output id="output_DrivingStyle">
+				<prompt selectionType="RANDOM">
+					<item>{next_question}</item>
+				</prompt>
+				<getUserInput>
+					<input>
+						<grammar>
+							<item>*</item>
+						</grammar>
+						<action varName="driving_style" operator="SET_TO_USER_INPUT"></action>
+						<goto ref="output_Classify"/>
+					</input>
+				</getUserInput>
+			</output>
+			<output id="output_Classify">
+				<prompt selectionType="RANDOM">
+					<item>[##CLASSIFY##]{personality} | {interests} | {driving_style}</item>
+				</prompt>
+			</output>
+		</folder>
+		<folder label="Global"/>
+		<folder label="Concepts">
+			<concept>
+				<grammar>
+					<item>yes</item>
+					<item>yeah</item>
+					<item>yup</item>
+					<item>yessir</item>
+					<item>yes sir</item>
+					<item>affirmative</item>
+					<item>go for it</item>
+					<item>let's do it</item>
+					<item>let's do this</item>
+					<item>rock on</item>
+					<item>ok</item>
+					<item>okie dokie</item>
+					<item>okie doke</item>
+					<item>why not</item>
+					<item>you bet</item>
+					<item>you betcha</item>
+					<item>sure</item>
+					<item>alright</item>
+					<item>alrighty</item>
+				</grammar>
+            </concept>
+			<concept>
+				<grammar>
+					<item>no</item>
+					<item>not today</item>
+					<item>not now</item>
+					<item>nah</item>
+					<item>nope</item>
+					<item>negative</item>
+					<item>negatory</item>
+					<item>don't think so</item>
+					<item>don't want to</item>
+				</grammar>
+            </concept>
+			<concept>
+				<grammar>
+					<item>active</item>
+                    <item>exercise</item>
+                    <item>work out</item>
+                    <item>workout</item>
+                    <item>ski</item>
+                    <item>skiing</item>
+                    <item>hiking</item>
+                    <item>walking</item>
+                    <item>hike</item>
+                    <item>walk</item>
+                    <item>rock climbing</item>
+                    <item>self defense</item>
+                    <item>running</item>
+                    <item>to run</item>
+                    <item>cross fit</item>
+                    <item>cross-fit</item>
+                    <item>play sports</item>
+				</grammar>
+            </concept>
+			<concept>
+				<grammar>
+					<item>confident</item>
+                    <item>confidence</item>
+                    <item>sure of myself</item>
+                    <item>don't get rattled</item>
+                    <item>fearless</item>
+				</grammar>
+            </concept>
+		</folder>
+	</flow>
+	<entities>
+		<entity name="Insight">
+			<value name="active" value="active">
+                <grammar>
+                    <item>exercise</item>
+                    <item>work out</item>
+                    <item>workout</item>
+                    <item>ski</item>
+                    <item>skiing</item>
+                    <item>hiking</item>
+                    <item>walking</item>
+                    <item>hike</item>
+                    <item>walk</item>
+                    <item>rock climbing</item>
+                    <item>self defense</item>
+                    <item>running</item>
+                    <item>to run</item>
+                    <item>cross fit</item>
+                    <item>cross-fit</item>
+                    <item>play sports</item>
+                </grammar>
+			</value>
+			<value name="a_parent" value="a_parent">
+                <grammar>
+                    <item>kids</item>
+                    <item>children</item>
+                    <item>kiddos</item>
+                </grammar>
+			</value>
+			<value name="married" value="married">
+                <grammar>
+                    <item>the wife</item>
+                    <item>my wife</item>
+                    <item>the husband</item>
+                    <item>my husband</item>
+                    <item>my hubby</item>
+                </grammar>
+			</value>
+			<value name="competitive" value="competitive">
+                <grammar>
+                    <item>love winning</item>
+                    <item>love to win</item>
+                    <item>play hard</item>
+                    <item>play to win</item>
+                </grammar>
+			</value>
+			<value name="driven" value="driven">
+                <grammar>
+                    <item>go after it</item>
+                    <item>don't overthink</item>
+                    <item>work hard</item>
+                </grammar>
+			</value>
+			<value name="spontaneous" value="spontaneous">
+                <grammar>
+                    <item>don't like to overthink</item>
+                    <item>don't overthink</item>
+                    <item>just do it</item>
+                </grammar>
+			</value>
+			<value name="rebellious" value="rebellious">
+                <grammar>
+                    <item>rebel</item>
+                    <item>hate rules</item>
+                    <item>rules don't apply</item>
+                </grammar>
+			</value>
+			<value name="confident" value="confident">
+                <grammar>
+                    <item>confidence</item>
+                    <item>sure of myself</item>
+                    <item>don't get rattled</item>
+                    <item>fearless</item>
+                </grammar>
+			</value>
+			<value name="independant" value="independant">
+                <grammar>
+                    <item>self sufficient</item>
+                    <item>self-sufficient</item>
+                    <item>my own man</item>
+                    <item>my own person</item>
+                </grammar>
+			</value>
+			<value name="stylish" value="stylish">
+                <grammar>
+                    <item>fashion</item>
+                    <item>fashionista</item>
+                    <item>decorating</item>
+                    <item>redecorating</item>
+                </grammar>
+			</value>
+			<value name="sophisticated" value="sophisticated">
+                <grammar>
+                    <item>discriminating</item>
+                    <item>opera</item>
+                    <item>museum</item>
+                    <item>museums</item>
+                    <item>theater</item>
+                    <item>the arts</item>
+                </grammar>
+			</value>
+			<value name="dependable" value="dependable">
+                <grammar>
+                    <item>rely on me</item>
+                    <item>count on me</item>
+                    <item>Won't let you down</item>
+                </grammar>
+			</value>
+			<value name="open" value="open">
+                <grammar>
+                    <item>new ideas</item>
+                    <item>help others</item>
+                    <item>try new things</item>
+                </grammar>
+			</value>
+			<value name="caring" value="caring">
+                <grammar>
+                    <item>do things for</item>
+                    <item>help others</item>
+                    <item>help other</item>
+                </grammar>
+			</value>
+			<value name="passionate" value="passionate">
+                <grammar>
+                    <item>fired up</item>
+                    <item>jazzed</item>
+                    <item>passion</item>
+                </grammar>
+			</value>
+			<value name="decisive" value="decisive">
+                <grammar>
+                    <item>I know what I want</item>
+                    <item>I know * what I want</item>
+                </grammar>
+			</value>
+			<value name="mysterious" value="mysterious">
+                <grammar>
+                    <item>can't figure me out</item>
+                    <item>don't get me</item>
+                </grammar>
+			</value>
+		</entity>
+	</entities>
+	<variables>
+		<var_folder name="Home">
+			<var name="personality" type="TEXT"/>
+			<var name="interests" type="TEXT"/>
+			<var name="driving_style" type="TEXT"/>
+			<var name="final_questions" type="TEXT"/>
+			<var name="next_question" type="TEXT"/>
+			<var name="insight1" type="TEXT"/>
+			<var name="insight2" type="TEXT"/>
+			<var name="insight3" type="TEXT"/>
+			<var name="insight4" type="TEXT"/>
+		</var_folder>
+    </variables>
+	<settings>
+		<setting name="USE_CONCEPTS">3</setting>
+        <setting name="ENTITIES_SCOPE">3</setting>
+	</settings>
+</dialog>

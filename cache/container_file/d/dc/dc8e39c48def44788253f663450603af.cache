@@ -1,0 +1,268 @@
+(dp1
+S'session'
+p2
+(dp3
+S'_accessed_time'
+p4
+F1460397686.253
+sS'POSTS'
+p5
+(lp6
+(dp7
+S'text'
+p8
+VHey, I'm Watson. I can pick the perfect BMW for you. Ready?
+p9
+sS'style'
+p10
+S'Watson'
+p11
+sS'icon'
+p12
+S''
+sS'name'
+p13
+g11
+sS'datetime'
+p14
+S'2016-04-11 11:00'
+p15
+sa(dp16
+S'text'
+p17
+Vyes
+p18
+sS'style'
+p19
+S'Partner'
+p20
+sS'datetime'
+p21
+S'2016-04-11 11:00'
+p22
+sS'name'
+p23
+g20
+sS'icon'
+p24
+S''
+sa(dp25
+g17
+VIn order for me to pick out your perfect match, I need to take a look at your social bits and bobs.
+p26
+sg19
+S'Watson'
+p27
+sg21
+S'2016-04-11 11:00'
+p28
+sg23
+g27
+sg24
+S''
+sa(dp29
+S'text'
+p30
+VUh...rather not
+p31
+sS'style'
+p32
+S'Partner'
+p33
+sS'icon'
+p34
+S''
+sS'name'
+p35
+g33
+sS'datetime'
+p36
+S'2016-04-11 11:00'
+p37
+sa(dp38
+g30
+VAs you wish. I'll just ask you a few questions then to get to know you a little better. Ready to begin?
+p39
+sg32
+S'Watson'
+p40
+sg34
+S''
+sg35
+g40
+sg36
+S'2016-04-11 11:00'
+p41
+sa(dp42
+S'text'
+p43
+Vgo
+p44
+sS'style'
+p45
+S'Partner'
+p46
+sS'datetime'
+p47
+S'2016-04-11 11:00'
+p48
+sS'name'
+p49
+g46
+sS'icon'
+p50
+S''
+sa(dp51
+g43
+VFirst question. In their unguarded moments, how would your friends describe you?
+p52
+sg45
+S'Watson'
+p53
+sg47
+S'2016-04-11 11:00'
+p54
+sg49
+g53
+sg50
+S''
+sa(dp55
+S'text'
+p56
+VI'm really just a family gal at heart
+p57
+sS'style'
+p58
+S'Partner'
+p59
+sS'icon'
+p60
+S''
+sS'name'
+p61
+g59
+sS'datetime'
+p62
+S'2016-04-11 11:00'
+p63
+sa(dp64
+g56
+VNext question. What's your idea of fun?
+p65
+sg58
+S'Watson'
+p66
+sg60
+S''
+sg61
+g66
+sg62
+S'2016-04-11 11:00'
+p67
+sa(dp68
+S'text'
+p69
+VAfter the kids go to school I like to have coffee with my girlfriends
+p70
+sS'style'
+p71
+S'Partner'
+p72
+sS'datetime'
+p73
+S'2016-04-11 11:00'
+p74
+sS'name'
+p75
+g72
+sS'icon'
+p76
+S''
+sa(dp77
+g69
+VLast question, Tell me a little bit about the kind of driving you do and your driving style.
+p78
+sg71
+S'Watson'
+p79
+sg73
+S'2016-04-11 11:00'
+p80
+sg75
+g79
+sg76
+S''
+sa(dp81
+S'text'
+p82
+VI need something to haul all of our stuff around
+p83
+sS'style'
+p84
+S'Partner'
+p85
+sS'icon'
+p86
+S''
+sS'name'
+p87
+g85
+sS'datetime'
+p88
+S'2016-04-11 11:01'
+p89
+sa(dp90
+g82
+VWith your active lifestyle, you need a vehicle that can do it all. To see the BMW model just right for you, walk me through some of your priorities and click the button!
+p91
+sg84
+S'Watson'
+p92
+sg86
+S''
+sg87
+g92
+sg88
+S'2016-04-11 11:01'
+p93
+sa(dp94
+S'text'
+p95
+VThere's no one quite like you, and I can see you enjoying yourself behind the wheel of a <b>X3 35i</b>.
+p96
+sS'style'
+p97
+S'Watson'
+p98
+sS'datetime'
+p99
+S'2016-04-11 11:01'
+p100
+sS'name'
+p101
+g98
+sS'icon'
+p102
+S''
+sasS'DIALOG_CLIENT_ID'
+p103
+I1582705
+sS'STT_TOKEN'
+p104
+VvtpJR2EuSWIRaz7kHKNx10ox6jd8Z1ART%2FFwaUBcBGgnffZfjM%2Bm7M6AZw71afuNcAM%2B2gLXW2CYRMqka6iNuOutt%2B%2FIQGTiJEWXB5%2BMOEKHpWCihmUlV4igoOTiqiI%2Bws%2B4D6oGfspuNDeloeGPc6hW4Wkf43ErKWlNVlAMgcktVZyKkyMIrzZ5gsdfgBqHsIod5IMZSiD93TFlbAwMMWKLl5WZnzUQ2Zm%2BZIjj9tqLJy3W3Crwbw%2B3Usjf5qhkPhUdmkYDsfQoR%2BeMp4EQoZaoHNcbrXvX2a1tiOx1Pf7OiBxV5ICZVBh5%2BjunsTZl6izwF6aLtEbURw%2FJxWOlKjSszxgN6LW%2Bi%2BSzIR4CVBCBw6MKXtlfbkV6WPhFALwhjM5Lr8QnzTcosAIke3BS0P8IerEGBSsmXnLTXFQCj2PjubIYZKbp%2BUfv9SpgP8zDKUWHK19uPziTskigeg6%2Fh1eBpL64eGTCG32ucQXe74D3yd3aMyA0iyOAGzP44qAJlTtk6iW6c2hT47JagCQ70OJ0NQAaDIi8M24PxCwf%2BjavLcYfbUn8BkHw0D8K%2F%2FRVOGFuTNu36oJftfgomERo5jeOZKoGCEaUSbXao9FDWxHk9300GclP9jydvM7e7BZuPmRIOES7RmqKmye95OCSDYKGt2bB4qvGxqZQVvP%2BI2PCeUulmH4vjPXYe4%2BxSkZ3xxvH%2F0WQx0xvBgG1n2WX7M%2FoVP69Tsc1lGIdxaVuT9mDLhMbEHSnoFvB%2Fbdggv1b7HUGxwmMqrakMCH%2FWr%2BnBXhpqER5NN1GsXown%2BjuBbrob6xIFYJmeE5DrrW%2BaeWgc7BhXyA%2ByM2PyaNsib4cVcF%2BrcHk%2Fw2r
+p105
+sS'_creation_time'
+p106
+F1460336862.802
+sS'CUSTOMER_PROFILE'
+p107
+VX3
+p108
+sS'TTS_TOKEN'
+p109
+VHh%2BVDDr7LfIrdUEl1fZF2aYy3AM07LWg7u1EkDcyHtNSqLEwk7pE6Iqd1EsexiKQ5H9UwTlZTr2AUQX%2BBQnj0nEnUP%2FeKBKbbbfOI4Fi3o%2FNphX%2FU3ZbEKHDNPSGmjfPaxOWLK%2Br1XER%2Fdzb56lhx7yVzy7SO4HK1HqsZVW0FUWQdxtDkPPihn2jZWgZZgoO%2FveMhoF%2BAgwFggZ9WZElD3mzrx6BQ74I735nkXT0bQvZl%2BCk5RvIn73MJVaFiM2GZlE3Q%2BMzqf8z6O9EtpHnYqllwIHxAuYmYJ60Vj03KleHa7ddr1HyWzaH3oieyk1PMNli12GguWQZGkzg%2FmpRHGuIPjuiNRoXkwjMF7LB2qPA%2F%2B7lf0CmR4%2Fk5QysnVHmaiNg2gXDWR8BoFPU7zsG3qkdn7aAjeGe7Liip6ODL8GzbWwdQnyhO11xuhUFSHlitkKNSBtlXCfdZIJVtJEdSwc6%2FKHM%2FdkENewh6afRXWkoaLoFouiPCMv0OOiGc%2FsCtOGUoEvajY78F%2FkKOe79z%2FmLcKH%2BBHVWQWQnTGGBfXT7BBu0Uuq7TGjDSg8ffpW3RmcI2tFK2hOyFcarJHaiCyoU9js69geznmHGgGOLvOTMtxOaHDiRkYuTBZTz3NN4W8n1KlRBPEpcON44w6RzbRlyVBKYG6igp%2BtmpjIgpda%2Fq0amvE9F2BaXQokDx%2BwT%2FzYKQqbEE0aNbCqnvBWGxRbRvdQEnao6ab1VAzHwDlALHx%2FD6gclj%2FF8knXiMLo8vZwXx0O9XuT%2FJbwWlxQqRg5JBnLJwT2x6QJH4jY4IA4Lj3o9XLXvtkIR5DSv%2Bda5js71Um7%2FS6LYR827IxbBRU71Sh8ZPINa
+p110
+sS'DIALOG_CONVERSATION_ID'
+p111
+I1581901
+ss.
