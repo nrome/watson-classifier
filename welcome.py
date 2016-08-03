@@ -24,8 +24,8 @@ PERSONA_IMAGE = ''
 PERSONA_STYLE = 'Partner'
 WATSON_IMAGE = ''
 WATSON_STYLE = 'Watson'
-CHAT_TEMPLATE = 'designer-index.html'
 #CHAT_TEMPLATE = 'index.html'
+CHAT_TEMPLATE = 'designer-index.html'
 QUESTION_INPUT = 'response-input'
 SEARCH_TYPE_INPUT = 'search-type'
 SEARCH_VALUE_INPUT = 'search-values'
@@ -375,6 +375,7 @@ def get_PI(body):
 	
 	outer_parent = big5_data["children"]
 	needs_parent = needs_data["children"]
+	values_parent = values_data["children"]
 	
 	returnPI = '---BIG Five---<br>'
 	returnPI = returnPI + outer_parent[0]["name"] + ' percentage ' + str(outer_parent[0]["percentage"]) + '<br>'
@@ -398,10 +399,20 @@ def get_PI(body):
 	print("---Children---")
 	for child in needs_parent[0]["children"]:
 		pp_map[child["name"]] = child["percentage"]
-		returnPI = returnPI + child["name"] + ' precentage ' + str(child["percentage"]) + '<br>'
+		returnPI = returnPI + child["name"] + ' percentage ' + str(child["percentage"]) + '<br>'
+		
+	returnPI = returnPI + '---Values---<br>'
+	returnPI = returnPI + needs_parent[0]["name"] + ' percentage ' + str(needs_parent[0]["percentage"]) + '<br>'
+	pp_map[needs_parent[0]["name"]] = needs_parent[0]["percentage"]
+	
+	  # print all children names and percentages
+	print("---Children---")
+	for child in values_parent[0]["children"]:
+		pp_map[child["name"]] = child["percentage"]
+		returnPI = returnPI + child["name"] + ' percentage ' + str(child["percentage"]) + '<br>'
 
-   	returnPI = returnPI + '---- TOP 3----<br>'		
-	for key in sorted(pp_map, key=pp_map.get, reverse=True)[:3]:
+   	returnPI = returnPI + '---- TOP 6----<br>'		
+	for key in sorted(pp_map, key=pp_map.get, reverse=True)[:6]:
 		returnPI = returnPI + key + '--' + str(pp_map[key]) + '<br>'
 			
 			
