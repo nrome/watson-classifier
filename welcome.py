@@ -24,9 +24,15 @@ QUESTION_INPUT = 'response-input'
 SEARCH_TYPE_INPUT = 'search-type'
 SEARCH_VALUE_INPUT = 'search-values'
 CURSOR_INPUT = 'cursor-input'
-DIALOG_ID = '0fcd2515-2afe-4532-91ac-ea3e58cbb7a3'
-DIALOG_USERNAME = 'a69f9fa0-2d36-42ad-a675-80c6c3dcb988'
-DIALOG_PASSWORD = '7CJUxjzYwK0Z'
+# DIALOG_ID = '0fcd2515-2afe-4532-91ac-ea3e58cbb7a3'
+#DIALOG_ID = '2bb8ec59-8d7f-4bd5-aa02-00b100073d50'
+DIALOG_ID = 'a948ccb4-0334-4375-94e6-6c9c894e1e5f'
+# DIALOG_USERNAME = 'a69f9fa0-2d36-42ad-a675-80c6c3dcb988'
+# DIALOG_PASSWORD = '7CJUxjzYwK0Z'
+DIALOG_USERNAME = 'a17ff5a8-356b-48af-9232-306c7d4eb831'
+DIALOG_PASSWORD = '18CpuHOYnQZx'
+
+
 TTS_USERNAME = 'f15e4f46-254e-4a34-9e5d-dddb3474ba26'
 TTS_PASSWORD = 'lEgfLZl9MM9R'
 STT_USERNAME = '463932cc-63e8-4936-b29f-9f8a2639164d'
@@ -122,6 +128,7 @@ get_body = application.get_body
 def BMIX_get_first_dialog_response_json():
 	global DIALOG_ID, DIALOG_USERNAME, DIALOG_PASSWORD
 	POST_SUCCESS = 201
+	print('----inside')
 	response_json = None
 	url = 'https://gateway.watsonplatform.net/dialog/api/v1/dialogs/' + DIALOG_ID + '/conversation'
 	r = requests.post(url, auth=(DIALOG_USERNAME, DIALOG_PASSWORD))
@@ -131,17 +138,45 @@ def BMIX_get_first_dialog_response_json():
 	return response_json
 
 def BMIX_get_next_dialog_response(client_id, conversation_id, input):
-	global DIALOG_ID, DIALOG_USERNAME, DIALOG_PASSWORD
-	POST_SUCCESS = 201
-	response = ''
-	url = 'https://gateway.watsonplatform.net/dialog/api/v1/dialogs/' + DIALOG_ID + '/conversation'
-	payload = {'client_id': client_id, 'conversation_id': conversation_id, 'input': input}
-	r = requests.post(url, auth=(DIALOG_USERNAME, DIALOG_PASSWORD), params=payload)
-	if r.status_code == POST_SUCCESS:
-		response = format_dialog_response(r.json()['response'])
-	else:
-		response = "I'm sorry. I can't process your request at this time. Please try again in a few seconds. <span style='font-size: x-small;'>(" + str(r.status_code) + ")</span>"
-	return response
+    global DIALOG_ID, DIALOG_USERNAME, DIALOG_PASSWORD
+    POST_SUCCESS = 201
+    response = ''
+    print('----inside ESPO')
+    print(input)
+    url = 'https://gateway.watsonplatform.net/dialog/api/v1/dialogs/' + DIALOG_ID + '/conversation'
+    payload = {'client_id': client_id, 'conversation_id': conversation_id, 'input': input}
+    r = requests.post(url, auth=(DIALOG_USERNAME, DIALOG_PASSWORD), params=payload)
+    if r.status_code == POST_SUCCESS:
+        response = format_dialog_response(r.json()['response'])
+    else:
+        response = "I'm sorry. I can't process your request at this time. Please try again in a few seconds. <span style='font-size: x-small;'>(" + str(r.status_code) + ")</span>"
+#
+#    response2 = requests.post("https://gateway.watsonplatform.net/personality-insights/api/v2/profile",
+#    auth=("ESWjKdNqlmWF", "37ff7d59-b765-430e-839a-9be30b720c5f"),
+#    headers = {"content-type": "text/plain"},
+#    data=" I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone " )
+#    try:
+#        return json.loads(response.text)
+#    except:
+#        raise Exception("Error processing the request, HTTP: %d" % response.status_code)
+
+#   
+    return response
+	
+#	def BMIX_Test_PI_CALL(client_id, conversation_id, input):
+#	global DIALOG_ID, DIALOG_USERNAME, DIALOG_PASSWORD
+#	POST_SUCCESS = 201
+#	response = ''
+#	print('----inside ESPO')
+#	print(input)
+#	url = 'https://gateway.watsonplatform.net/dialog/api/v1/dialogs/' + DIALOG_ID + '/conversation'
+#	payload = {'client_id': client_id, 'conversation_id': conversation_id, 'input': input}
+#	r = requests.post(url, auth=(DIALOG_USERNAME, DIALOG_PASSWORD), params=payload)
+#	if r.status_code == POST_SUCCESS:
+#		response = format_dialog_response(r.json()['response'])
+#	else:
+#		response = "I'm sorry. I can't process your request at this time. Please try again in a few seconds. <span style='font-size: x-small;'>(" + str(r.status_code) + ")</span>"
+	#return response
 
 def BMIX_get_resolution(body):
 	global TOA_USERNAME, TOA_PASSWORD
@@ -261,7 +296,7 @@ def get_model(body, series, power, passengers, budget):
 			preference = [series]
 			#body['columns'][index]['preference'].append(series)
 			body['columns'][index]['preference'] = preference
-			print('--restricting preference')
+			print('--restricting preference ESPO ')
 			print(series)
 			print(body['columns'][index]['preference'])
 			print('--end')
@@ -284,6 +319,7 @@ def get_model(body, series, power, passengers, budget):
 				body['columns'][index]['is_objective'] = True
 				body['columns'][index]['goal'] = 'max'
 	options = body['options']
+	print('calling Tradeoff')
 	resolution = BMIX_get_resolution(body) 
 	solutions = resolution['solutions']
 	model = {}
@@ -378,6 +414,25 @@ def Index_Hello_Post():
 #	dialog_response = BMIX_get_next_dialog_response(g('DIALOG_CLIENT_ID',0), g('DIALOG_CONVERSATION_ID',0), format_vars_msg_hello(data))
 	return redirect(url_for('Index'))
 
+	#@app.route('/helloPI/', methods=['POST'])
+#def Index_Hello_PI():
+#At what point would the performance be a problem with the additional series and models.  How about training set data limits and training ?
+#  
+#  "url": "https://gateway.watsonplatform.net/personality-insights/api",
+#   "password": "ESWjKdNqlmWF",
+ #   "username": "37ff7d59-b765-430e-839a-9be30b720c5f"
+	
+#	response_json_PI = BMIX_test_PI_CALL()
+	
+#	if response_json != None:
+	#	g('DIALOG_CLIENT_ID', response_json['client_id'])
+	#	g('DIALOG_CONVERSATION_ID', response_json['conversation_id'])
+#	Retrieve data object from payload
+	#data = json.loads(request.data)[HELLO_JSON_OBJECT]
+#	set vars from data payload
+#	dialog_response = BMIX_get_next_dialog_response(g('DIALOG_CLIENT_ID',0), g('DIALOG_CONVERSATION_ID',0), format_vars_msg_hello(data))
+	#return redirect(url_for('Index'))
+	
 @app.route('/page', methods=['POST'])
 def Page_Post():
 	global CHAT_TEMPLATE, CURSOR_INPUT, SEARCH_TYPE_INPUT

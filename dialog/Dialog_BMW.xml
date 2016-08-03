@@ -4,7 +4,7 @@
 		<folder label="Main">
 			<output>
 				<prompt selectionType="RANDOM">
-					<item>Hey, I'm Watson. I can pick the perfect BMW for you. Ready?</item>
+					<item>Hey, I'm  Watson. I can piESPOSITOck the perfect BMW for you. Ready?</item>
 				</prompt>
 			</output>
 			<output id="output_MAIN">
@@ -173,7 +173,7 @@
 						<grammar>
 							<item>$ confident</item>
 						</grammar>
-						<action varName="personality" operator="SET_TO_USER_INPUT"></action>
+						<action varName="personality" operator="SET_TO_USER_INPUT"/>
 						<action varName="next_question" operator="SET_TO">I'll bet most people find that confidence of yours quite attractive. Next question. What's your idea of fun?</action>
 						<goto ref="output_Interests"/>
 					</input>
@@ -181,7 +181,7 @@
 						<grammar>
 							<item>*</item>
 						</grammar>
-						<action varName="personality" operator="SET_TO_USER_INPUT"></action>
+						<action varName="personality" operator="SET_TO_USER_INPUT"/>
 						<action varName="next_question" operator="SET_TO">Next question. What's your idea of fun?</action>
 						<goto ref="output_Interests"/>
 					</input>
@@ -196,7 +196,7 @@
 						<grammar>
 							<item>$ active</item>
 						</grammar>
-						<action varName="interests" operator="SET_TO_USER_INPUT"></action>
+						<action varName="interests" operator="SET_TO_USER_INPUT"/>
 						<action varName="next_question" operator="SET_TO">An active lifestyle like that definitely keeps you young. Last question, Tell me a little bit about the kind of driving you do and your driving style.</action>
 						<goto ref="output_DrivingStyle"/>
 					</input>
@@ -204,7 +204,7 @@
 						<grammar>
 							<item>*</item>
 						</grammar>
-						<action varName="interests" operator="SET_TO_USER_INPUT"></action>
+						<action varName="interests" operator="SET_TO_USER_INPUT"/>
 						<action varName="next_question" operator="SET_TO">Last question, Tell me a little bit about the kind of driving you do and your driving style.</action>
 						<goto ref="output_DrivingStyle"/>
 					</input>
@@ -219,7 +219,7 @@
 						<grammar>
 							<item>*</item>
 						</grammar>
-						<action varName="driving_style" operator="SET_TO_USER_INPUT"></action>
+						<action varName="driving_style" operator="SET_TO_USER_INPUT"/>
 						<goto ref="output_Classify"/>
 					</input>
 				</getUserInput>
