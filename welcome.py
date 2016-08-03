@@ -16,7 +16,7 @@ from random import randint
 #####
 
 # Bill Esposito added 7/27
-SECURITY = 'OFF'
+SECURITY = 'ON'
 # AUTHENTICATED = False
 
 PERSONA_NAME = 'Partner'
