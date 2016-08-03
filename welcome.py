@@ -14,6 +14,11 @@ from random import randint
 #####
 # Hardcoded env variables defaults for testing
 #####
+
+# Bill Esposito added 7/27
+SECURITY = 'OFF'
+# AUTHENTICATED = False
+
 PERSONA_NAME = 'Partner'
 PERSONA_IMAGE = ''
 PERSONA_STYLE = 'Partner'
@@ -95,9 +100,16 @@ MISSING_FIELDS = '[##MISSING_FIELDS##]'
 SUCCESS = '[##SUCCESS##]'
 BLANK_VLAUE = 'THISVALUEISBLANK'
 HELLO_JSON_OBJECT = 'JASON'
-CUSTOMER_X3 = 'X3'
-CUSTOMER_2_SERIES = '2 Series'
-CUSTOMER_6_SERIES = '6 Series'
+
+PERSONALITY_EXCITEMENT = 'excitement-seeking'
+PERSONALITY_DUTIFUL = 'dutiful'
+PERSONALITY_ADVENTUROUS = 'adventurous'
+PERSONALITY_CALM = 'calm-seeking'
+PERSONALITY_DUTIFUL = 'dutiful'
+PERSONALITY_PHILOSPHICAL = 'philosophical'
+PERSONALITY_HEDONISM = 'hedonism-high'
+PERSONALITY_CAREFREE = 'carefree'
+
 
 # ------------------------------------------------
 # CLASSES ----------------------------------------
@@ -151,33 +163,96 @@ def BMIX_get_next_dialog_response(client_id, conversation_id, input):
     else:
         response = "I'm sorry. I can't process your request at this time. Please try again in a few seconds. <span style='font-size: x-small;'>(" + str(r.status_code) + ")</span>"
 #
-#    response2 = requests.post("https://gateway.watsonplatform.net/personality-insights/api/v2/profile",
-#    auth=("ESWjKdNqlmWF", "37ff7d59-b765-430e-839a-9be30b720c5f"),
-#    headers = {"content-type": "text/plain"},
-#    data=" I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone " )
-#    try:
-#        return json.loads(response.text)
-#    except:
-#        raise Exception("Error processing the request, HTTP: %d" % response.status_code)
+    #response2 = requests.post("https://gateway.watsonplatform.net/personality-insights/api/v2/profile",
+    #auth=("ESWjKdNqlmWF", "37ff7d59-b765-430e-839a-9be30b720c5f"),
+    #headers = {"content-type": "text/plain"},
+    #data=" I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone hate everyone  I hate everyone  I hate everyone  I hate everyone  I hate everyone " )
+    #try:
+     #   return json.loads(response.text)
+    #except:
+    #    raise Exception("Error processing the request, HTTP: %d" % response.status_code)
 
 #   
     return response
-	
-#	def BMIX_Test_PI_CALL(client_id, conversation_id, input):
-#	global DIALOG_ID, DIALOG_USERNAME, DIALOG_PASSWORD
-#	POST_SUCCESS = 201
-#	response = ''
-#	print('----inside ESPO')
-#	print(input)
-#	url = 'https://gateway.watsonplatform.net/dialog/api/v1/dialogs/' + DIALOG_ID + '/conversation'
-#	payload = {'client_id': client_id, 'conversation_id': conversation_id, 'input': input}
-#	r = requests.post(url, auth=(DIALOG_USERNAME, DIALOG_PASSWORD), params=payload)
-#	if r.status_code == POST_SUCCESS:
-#		response = format_dialog_response(r.json()['response'])
-#	else:
-#		response = "I'm sorry. I can't process your request at this time. Please try again in a few seconds. <span style='font-size: x-small;'>(" + str(r.status_code) + ")</span>"
-	#return response
 
+def callTwitterandPI(dialog_rsponse):
+    print(dialog_rsponse)
+# This only works if user type "My handle is..  -- Will fix this
+	
+    atPosition = dialog_rsponse.find('@')
+    sliced = dialog_rsponse[atPosition+1:len(dialog_rsponse)]
+	
+	#sliced = dialog_rsponse[str.find('@')13:len(dialog_rsponse)]
+	
+    print(sliced)
+    
+    try:
+        import json
+    except ImportError:
+        import simplejson as json
+
+    import tweepy
+
+# Variables that contains the user credentials to access Twitter API 
+    ACCESS_TOKEN = '29478265-PwD3iF2s5ASyS4PeAJZh4ZaXRfM8hb50eGV69ZKX5'
+    ACCESS_SECRET = '9g93dja88xvHzd6x35oSZzdTm81wbxTf8ip4DxaOiCFbh'
+    CONSUMER_KEY = 'ypWv1pxaGQ9AOiT9Q35gwmGlP'
+    CONSUMER_SECRET = 'rhAeVSx6Pww0qi6rNlJNjWIFzlxvWkPHFnc58td2z7LVVmePDu'
+
+
+# Variables that contains the user credentials to access Twitter API 
+#ACCESS_TOKEN = '92360011-PieTjvukofiPhDoKYTl5jxMi7B3vAvsY8VpxaJulP'
+#ACCESS_SECRET = '6DJeg5VgjyeADiy5S8CA4zosF39M64aRLZEA5NYIa1e0f'
+#CONSUMER_KEY = 'kgk1RbniI6NBPgznR1q9b8o7Q'
+#CONSUMER_SECRET = 'zVpmuCb1p0oT3D2zn5pTyjr59rSc7yyxI9d7p2L8YS9t9SIUfh'
+
+
+    auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
+    auth.set_access_token(ACCESS_TOKEN, ACCESS_SECRET)
+
+    api = tweepy.API(auth)
+
+    public_tweets = api.home_timeline()
+
+# Get the User object for twitter...
+    user = api.get_user(sliced)
+# Models contain the data and some helper methods which we can then use:
+
+    print(user.screen_name)
+ #   print user.followers_count
+    print(user.description)
+
+    classifytext = user.description + '. ' 
+
+ #   for friend in user.friends():
+ #       print friend.screen_name
+
+    
+    for status in tweepy.Cursor(api.user_timeline,id=user.screen_name).items(100):
+  #      print (' for loop' + status.text.encode('cp437', errors='replace'))
+  #       print tweet.text.encode('cp437', errors='replace')
+        classifytext = classifytext + '. ' + status.text
+    
+    print("\n\n\n\n\n")
+
+    import requests,json
+    response = requests.post("https://gateway.watsonplatform.net/personality-insights/api/v2/profile",
+         auth=("37ff7d59-b765-430e-839a-9be30b720c5f", "ESWjKdNqlmWF"),
+         headers = {"content-type": "text/plain"},
+         data=classifytext.encode("utf8")
+         )
+         
+#    f = open('espoBMW.json','w')
+#f.write(response.text)
+#    f.write(response.text)
+    pi_format = get_PI(response.text)
+	
+    print ('Print at the end ' + classifytext.encode("utf8"))
+# python will convert \n to os.linesep
+#    f.close() # you can omit in most cases as the destructor will call it
+#    print (response.text)
+    return pi_format
+	
 def BMIX_get_resolution(body):
 	global TOA_USERNAME, TOA_PASSWORD
 	POST_SUCCESS = 200
@@ -290,14 +365,56 @@ def get_model_image(key, options):
 			break
 	return image_url;
 
-def get_model(body, series, power, passengers, budget):
+def get_PI(body):
+	data = json.loads(body)
+	pp_map = dict() 
+	big5_data = data["tree"]["children"][0]
+	needs_data = data["tree"]["children"][1]
+	values_data = data["tree"]["children"][2]
+	
+	outer_parent = big5_data["children"]
+	needs_parent = needs_data["children"]
+	
+	returnPI = '---BIG Five---<br>'
+	returnPI = returnPI + outer_parent[0]["name"] + ' percentage ' + str(outer_parent[0]["percentage"]) + '<br>'
+
+	for parent in outer_parent[0]["children"]:
+        # print all parents names and percentages
+		print("---Parent---")
+		pp_map[parent["name"]] = parent["percentage"]
+		returnPI = returnPI + parent["name"] + ' percentage ' + str(parent["percentage"]) + '<br>'
+        # print all children names and percentages
+		print("---Children---")
+		for child in parent["children"]:
+			pp_map[child["name"]] = child["percentage"]
+			returnPI = returnPI + child["name"] + ' precentage ' + str(child["percentage"]) + '<br>'
+	
+	returnPI = returnPI + '---Needs---<br>'
+	returnPI = returnPI + needs_parent[0]["name"] + ' percentage ' + str(needs_parent[0]["percentage"]) + '<br>'
+	pp_map[needs_parent[0]["name"]] = needs_parent[0]["percentage"]
+	
+	  # print all children names and percentages
+	print("---Children---")
+	for child in needs_parent[0]["children"]:
+		pp_map[child["name"]] = child["percentage"]
+		returnPI = returnPI + child["name"] + ' precentage ' + str(child["percentage"]) + '<br>'
+
+   	returnPI = returnPI + '---- TOP 3----<br>'		
+	for key in sorted(pp_map, key=pp_map.get, reverse=True)[:3]:
+		returnPI = returnPI + key + '--' + str(pp_map[key]) + '<br>'
+			
+			
+			
+	return returnPI
+		
+def get_model(body, personality, power, passengers, budget):
 	for index in range(len(body['columns'])):
-		if body['columns'][index]['key'] == 'series':
-			preference = [series]
+		if body['columns'][index]['key'] == 'personality':
+			preference = [personality]
 			#body['columns'][index]['preference'].append(series)
 			body['columns'][index]['preference'] = preference
 			print('--restricting preference ESPO ')
-			print(series)
+			print(personality)
 			print(body['columns'][index]['preference'])
 			print('--end')
 		if body['columns'][index]['key'] == 'price':
@@ -349,59 +466,85 @@ def g(key, default_value):
 		session[key] = default_value
 	return session[key]
 
-# ------------------------------------------------
+# ----------------s('AUTHENTICATED', true)--------------------------------
 # FLASK ------------------------------------------
 app = Flask(__name__)
 register_application(app)
 
 @app.route('/')
 def Index():
-	global CHAT_TEMPLATE, STT_USERNAME, STT_PASSWORD, TTS_USERNAME, TTS_PASSWORD
+    global CHAT_TEMPLATE, STT_USERNAME, STT_PASSWORD, TTS_USERNAME, TTS_PASSWORD
+    if SECURITY == 'ON' and g('AUTHENTICATED',0) != True:
+        return redirect(url_for('.Login'))
 #	Initialize SST & TTS tokens
-	stt_token = Authorization(username=STT_USERNAME, password=STT_PASSWORD).get_token(url=SpeechToText.default_url)
-	tts_token = Authorization(username=TTS_USERNAME, password=TTS_PASSWORD).get_token(url=TextToSpeech.default_url)
-	s('STT_TOKEN', stt_token)
-	s('TTS_TOKEN', tts_token)
+    stt_token = Authorization(username=STT_USERNAME, password=STT_PASSWORD).get_token(url=SpeechToText.default_url)
+    tts_token = Authorization(username=TTS_USERNAME, password=TTS_PASSWORD).get_token(url=TextToSpeech.default_url)
+    s('STT_TOKEN', stt_token)
+    s('TTS_TOKEN', tts_token)
 #	Initialize chat
-	s('POSTS',[])
-	response = ''
-	response_json = BMIX_get_first_dialog_response_json()
-	if response_json != None:
-		s('DIALOG_CLIENT_ID', response_json['client_id'])
-		s('DIALOG_CONVERSATION_ID', response_json['conversation_id'])
-		response = response_json['response']
-	post_watson_response(response)
-	return render_template(CHAT_TEMPLATE, posts=g('POSTS',[]), form='', stt_token=stt_token, tts_token=tts_token)
+    s('POSTS',[])
+    response = ''
+    response_json = BMIX_get_first_dialog_response_json()
+    if response_json != None:
+        s('DIALOG_CLIENT_ID', response_json['client_id'])
+        s('DIALOG_CONVERSATION_ID', response_json['conversation_id'])
+        response = response_json['response']
+    post_watson_response(response)
+    return render_template(CHAT_TEMPLATE, posts=g('POSTS',[]), form='', stt_token=stt_token, tts_token=tts_token)
 
 @app.route('/', methods=['POST'])
 def Index_Post():
-	global CHAT_TEMPLATE, QUESTION_INPUT, CUSTOMER_2_SERIES, CUSTOMER_6_SERIES, CUSTOMER_X3
-	question = request.form[QUESTION_INPUT]
+    global CHAT_TEMPLATE, QUESTION_INPUT, PERSONALITY_ADVENTUROUS, PERSONALITY_CALM, PERSONALITY_CAREFREE, PERSONALITY_DUTIFUL, PERSONALITY_EXCITEMENT, PERSONALITY_HEDONISM, PERSONALITY_PHILOSPHICAL
+    if SECURITY == 'ON' and g('AUTHENTICATED',0) != True:
+        return redirect(url_for('.Login'))
+    question = request.form[QUESTION_INPUT]
 #	Display original question
-	post_user_input(question)
+    post_user_input(question)
 #	Reset display
-	application_response = ''
-	form = ''
+    application_response = ''
+    form = ''
 #	Orchestrate services
-	if len(question) == 0:
-		application_response = "C'mon, you have to say something!"
-	else:
-		dialog_response = BMIX_get_next_dialog_response(g('DIALOG_CLIENT_ID', 0), g('DIALOG_CONVERSATION_ID', 0), question)
-		application_response = get_application_response(get_chat_response(dialog_response))
-		form = get_application_response(get_form(dialog_response))
-		if application_response == CUSTOMER_2_SERIES or application_response == CUSTOMER_6_SERIES or application_response == CUSTOMER_X3:
-			s('CUSTOMER_PROFILE', application_response)
-			dialog_response = BMIX_get_next_dialog_response(g('DIALOG_CLIENT_ID', 0), g('DIALOG_CONVERSATION_ID', 0), application_response)
+    if len(question) == 0:
+        application_response = "C'mon, you have to say something!"
+    else:
+        dialog_response = BMIX_get_next_dialog_response(g('DIALOG_CLIENT_ID', 0), g('DIALOG_CONVERSATION_ID', 0), question)
+ 
+# Esposito Call Twitter API and PI.  Probably need a more reliable test here for this
+ 
+        if (question.startswith('My handle is') or '@' in question):
+            piResponse = callTwitterandPI(question)
+ #           for doc in piResponse['tree']:
+ #               print(doc[0]['name'])
+            post_watson_response(piResponse)
+        
+        application_response = get_application_response(get_chat_response(dialog_response))
+        form = get_application_response(get_form(dialog_response))
+        if application_response == PERSONALITY_ADVENTUROUS or application_response == PERSONALITY_CALM or application_response == PERSONALITY_CAREFREE or application_response == PERSONALITY_DUTIFUL or application_response == PERSONALITY_EXCITEMENT or application_response == PERSONALITY_HEDONISM or application_response == PERSONALITY_PHILOSPHICAL:
+            s('CUSTOMER_PROFILE', application_response)
+            dialog_response = BMIX_get_next_dialog_response(g('DIALOG_CLIENT_ID', 0), g('DIALOG_CONVERSATION_ID', 0), application_response)
 			#back_channel = BMIX_get_next_dialog_response(g('DIALOG_CLIENT_ID', 0), g('DIALOG_CONVERSATION_ID', 0), '[##INSIGHT##] xxx ' + application_response)
 			#print('--back_channel')
 			#print(back_channel)
-			application_response = get_application_response(get_chat_response(dialog_response))
-			form = get_application_response(get_form(dialog_response))
+            print('IS IT GOING IN HERE')
+            application_response = get_application_response(get_chat_response(dialog_response))
+            form = get_application_response(get_form(dialog_response))
 			
 #	Display application_response
-	post_watson_response(application_response)
-	return render_template(CHAT_TEMPLATE, posts=g('POSTS',[]), form=form, stt_token=g('STT_TOKEN', ''), tts_token=g('TTS_TOKEN', ''))
-	
+    post_watson_response(application_response)
+    return render_template(CHAT_TEMPLATE, posts=g('POSTS',[]), form=form, stt_token=g('STT_TOKEN', ''), tts_token=g('TTS_TOKEN', ''))
+
+@app.route('/login', methods=['GET', 'POST'])
+def Login():
+    global AUTHENTICATED
+    error = None
+    if request.method == 'POST':
+        if request.form['username'] != 'bmwadmin' or request.form['password'] != 'bmw_admin$':
+            error = 'Invalid Credentials. Please try again.'
+        else:
+            s('AUTHENTICATED',True)
+            return redirect(url_for('.Index'))
+    return render_template('login.html', error=error)
+
 @app.route('/hello/', methods=['POST'])
 def Index_Hello_Post():
 	response_json = BMIX_get_first_dialog_response_json()
@@ -453,7 +596,7 @@ def Page_Post():
 
 @app.route('/decide', methods=['POST'])
 def Index_Decide_Post():
-	global CHAT_TEMPLATE, CUSTOMER_2_SERIES
+	global CHAT_TEMPLATE, PERSONALITY_ADVENTUROUS
 #	Reset display
 	application_response = ''
 	form = ''
@@ -464,7 +607,7 @@ def Index_Decide_Post():
 	passengers = request.form.get('passengers', '')
 	budget = request.form.get('budget', '')
 #	Get series from session
-	series = g('CUSTOMER_PROFILE', CUSTOMER_2_SERIES)
+	series = g('CUSTOMER_PROFILE', PERSONALITY_ADVENTUROUS)
 	print('--series')
 	print(series)
 #	Get model

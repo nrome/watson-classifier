@@ -11,9 +11,14 @@ import xmltodict
 #####
 # Hardcoded env variables defaults for testing
 #####
-CLASSIFIER_ID = 'cd6374x52-nlc-967'
-CLASSIFIER_USERNAME = '22e377fc-6a7a-4516-8a2e-574161aa4670'
-CLASSIFIER_PASSWORD = '5sY4nrSCuSaL'
+#CLASSIFIER_ID = 'cd6374x52-nlc-967'
+#CLASSIFIER_USERNAME = '22e377fc-6a7a-4516-8a2e-574161aa4670'
+#CLASSIFIER_PASSWORD = '5sY4nrSCuSaL'
+
+CLASSIFIER_ID = '17aa09x78-nlc-8'
+CLASSIFIER_USERNAME = 'f5f18277-dcda-401e-9bb1-30491157c2da'
+CLASSIFIER_PASSWORD = 'M8zbBJWZ0HhQ'
+
 #####
 # Tokens
 #####
@@ -30,13 +35,16 @@ def BMIX_classify(utterance, threshold):
 	url = 'https://gateway.watsonplatform.net/natural-language-classifier/api/v1/classifiers/' + CLASSIFIER_ID + '/classify'
 	r = requests.post(url, auth=(CLASSIFIER_USERNAME, CLASSIFIER_PASSWORD), headers={'content-type': 'application/json'}, data=json.dumps({'text': utterance}))
 
-	if r.status_code == POST_SUCCESS:
-		classes = r.json()['classes']
-		if len(classes) > 0:
-			confidence = classes[0]['confidence']
-			if (confidence > threshold):
-				class_name = classes[0]['class_name']
-	return class_name
+	#if r.status_code == POST_SUCCESS:
+	#	classes = r.json()['classes']
+	#	if len(classes) > 0:
+	#		confidence = classes[0]['confidence']
+	#		if (confidence > threshold):
+	#			class_name = classes[0]['class_name']
+	
+	#return class_name
+	return r
+	
 # R&R search helper funcs ------------------------
 def populate_entity_from_randr_result(doc):
 	entity = {}
@@ -86,12 +94,35 @@ def markup_wex_results(search_results, cursor):
 def get_custom_response(application_response):
 	#call out for any customer specific logic to 'intercept' a repsonse
 	global CLASSIFY_UTTERANCE;
+	POST_SUCCESS = 200
+	
+	classify_list = []
 	custom_response = application_response
 	#randr search requested
 	if (application_response.startswith(CLASSIFY_UTTERANCE)):
 		utterance = application_response.replace(CLASSIFY_UTTERANCE, '')
 		print('--utterance')
-		print(utterance)
-		class_name = BMIX_classify(utterance, 0)
+		utterances = utterance.split('|')
+		for word in utterances:
+				print ('call before')
+				r = BMIX_classify(word, 20)
+				print(r.status_code)
+				if r.status_code == POST_SUCCESS:
+					classes = r.json()['classes']
+					if len(classes) > 0:
+						confidence = classes[0]['confidence']
+						class_name = classes[0]['class_name']
+						confidence1 = classes[1]['confidence']
+						class_name1 = classes[1]['class_name']
+					
+				#		if (confidence > 20):
+						classify_list.append(class_name)
+						classify_list.append(confidence)
+						classify_list.append('<br>')
+				#		if (confidence1 > 20):
+						classify_list.append(class_name1)
+						classify_list.append(confidence1)
+						classify_list.append('<br><br>')
+	#		print(class_name)
 		custom_response = class_name
-	return custom_response
+	return classify_list

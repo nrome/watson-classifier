@@ -16,6 +16,11 @@ RETRIEVE_AND_RANK_USERNAME = '2b4a1aaa-d177-47fe-8592-15a86104ce4d'
 RETRIEVE_AND_RANK_PASSWORD = 'SlEx6tCborZL'
 WEX_URL = 'http://10.72.19.40/vivisimo/cgi-bin/velocity.exe?v.function=query-search&v.indent=true&query=[##QUERY_STR##]&sources=LAMR-all-filesystem&v.app=api-rest&authorization-username=admin&authorization-password=admin&v.username=data-explorer-admin&v.password=TH1nk1710'
 RANDR_SEARCH_ARGS = 'id,ShortDescription,Text'
+
+
+CLASSIFY_UTTERANCE = '[##CLASSIFY##]'
+
+
 #####
 # Overwrites by env variables
 #####
@@ -205,7 +210,7 @@ def register_application(app):
 	
 def get_application_response(dialog_response):
 	#global HASH_VALUES, PRODUCT_NAME_OPTIONS_DEFAULT, PRODUCT_NAME_OPTIONS_POPULATED
-	global HASH_VALUES
+	global HASH_VALUES, CLASSIFY_UTTERANCE;
 	application_response = dialog_response
 	for key in HASH_VALUES:
 		value = HASH_VALUES[key]
@@ -218,7 +223,9 @@ def get_application_response(dialog_response):
 	elif (dialog_response.startswith(SEARCH_WITH_WEX)):
 		question = dialog_response.replace(SEARCH_WITH_WEX, '')
 		application_response = search_wex(question)
-	application_response = get_custom_response(application_response)
-	application_response = string.replace(application_response, '[', '<')
-	application_response = string.replace(application_response, ']', '>')
+	elif (dialog_response.startswith(CLASSIFY_UTTERANCE)):
+		application_response = get_custom_response(application_response)
+	else:
+		application_response = string.replace(application_response, '[', '<')
+		application_response = string.replace(application_response, ']', '>')
 	return application_response
